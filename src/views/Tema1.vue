@@ -89,7 +89,25 @@
     #t_1_3.titulo-segundo
       h2 1.3  SQL – Standard Query Language
     p.mb-5  En nivel teórico, hay dos lenguajes para el uso de bases de datos:
-    //-- Aqui van los cards 60-60
+    .tarjeta--container.row.mb-5
+      .col-lg-6.tarjeta.c1.p-5
+        .row.justify-content-center.mb-4.p-5.text-center
+          .col-6
+            figure.mb-5(data-aos="flip-left", data-aos-delay='0')
+              //--img.h180(src='@/assets/curso/t1-i4.svg', alt='Imagen Decorativa')
+          
+          .h2 Data Definition Language
+          p Es el lenguaje que se emplea para establecer bases de datos y tablas, y para transformar sus estructuras. Este lenguaje trabaja sobre ciertas tablas especiales llamadas diccionario de datos.
+
+      .col-lg-6.tarjeta.c2.p-5
+        .row.justify-content-center.mb-4.p-5.text-center
+          .col-6
+            figure.mb-5(data-aos="flip-right", data-aos-delay='100')
+              //--img.h180(src='@/assets/curso/t1-i5.svg', alt='imagen decorativa')
+          
+          .h2 Data Manipulation Language
+          p Es lo que se usa para cambiar y obtener datos desde las bases de datos.
+
 
     .row
       .col-lg-3
