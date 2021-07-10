@@ -4,8 +4,8 @@
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     .titulo-principal
       .titulo-principal__numero
-        span  3
-      h1 Interface de Línea de Comandos de MySQL
+        span  5
+      h1 Consulta multitablas - DML
 
 
 
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'Tema3',
+  name: 'Tema5',
   data: () => ({
     // variables de vue
   }),
