@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="443" height="386" viewBox="0 0 443 386">
+  <g id="t2-c1" transform="translate(-452 -186)">
+    <text id="mysql_SHOW_DATABASES_--------------------_Database_--------------------_farmacia_information_schema_mysql_performance_schema_prueba_sys_--------------------_6_r" data-name="mysql&gt; SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| farmacia           |
+| information_schema |
+| mysql              |
+| performance_schema |
+| prueba             |
+| sys                |
++--------------------+
+6 r" transform="translate(479 213)" fill="#12263f" font-size="16" font-family="Consolas"><tspan x="0" y="15">mysql&gt; SHOW DATABASES;</tspan><tspan x="0" y="39">+--------------------+</tspan><tspan x="0" y="63" xml:space="preserve">| Database           |</tspan><tspan x="0" y="87">+--------------------+</tspan><tspan x="0" y="111" xml:space="preserve">| farmacia           |</tspan><tspan x="0" y="135">| information_schema |</tspan><tspan x="0" y="159" xml:space="preserve">| mysql              |</tspan><tspan x="0" y="183">| performance_schema |</tspan><tspan x="0" y="207" xml:space="preserve">| prueba             |</tspan><tspan x="0" y="231" xml:space="preserve">| sys                |</tspan><tspan x="0" y="255">+--------------------+</tspan><tspan x="0" y="279">6 rows in set (0.00 sec)</tspan><tspan x="0" y="303"> </tspan><tspan x="0" y="327">mysql&gt;</tspan></text>
+    <rect id="Rectangle_8216" data-name="Rectangle 8216" width="443" height="386" transform="translate(452 186)" fill="none"/>
+  </g>
+</svg>
