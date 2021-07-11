@@ -113,11 +113,78 @@
     .row.justify-content-center.mb-5
       .col-lg-6.tarjeta--gris
         figure
-          img(src='@/assets/curso/t2-c6.svg' alt='ejemplo de tabla')    
+          img.h210(src='@/assets/curso/t2-c6.svg' alt='ejemplo de tabla')    
+    
+    
+    h3.titulo-tercero
+        span.squareLetter A
+        | Valores Nulos
+    .row.mb-5.justify-content-center
+      .col-lg-10
+        p.mb-4  Al establecer cada columna se puede concluir si podrá o no contener valores nulos. Cabe recordar que, aquellas columnas que hacen parte de una clave primaria no pueden almacenar valores nulos.
+        p.mb-4  Si se define una columna como clave primaria, queda imposibilitada para que pueda contener valores 
+          span.etiqueta NULL (nulo), 
+          | pero este caso no es únicamente en que se puede ser interesante imposibilitar la retribución de valores nulos para una columna.
+        p.mb-5  Por defecto, cada columna permite valores nulos 
+          span.etiqueta (NULL), 
+          | y para que no se admitan, se usa 
+          span.etiqueta NOT NULL. 
+          | Por ejemplo:
+        .row.justify-content-center.mb-5
+          .col-lg-8
+            .tarjeta--gris.p-4
+              figure
+                img.h210(src='@/assets/curso/t2-c7.svg' alt='ejemplo de tabla')         
+        p.mb-5  Listar las tablas existentes hasta ahora:
+        .row.justify-content-center.mb-5
+          .col-lg-8
+            .tarjeta--gris.p-4
+              figure
+                img.h210(src='@/assets/curso/t2-c8.svg' alt='ejemplo de tabla')         
+    h3.titulo-tercero
+        span.squareLetter B
+        | Valores por defecto
+    .row.mb-5.justify-content-center
+      .col-lg-10
+        p.mb-4  En una columna también se puede precisar, opcionalmente, un valor por defecto. El valor por defecto se determinará de forma automática a una columna a la hora que no se especifique un valor determinado al añadir.
+        p.mb-4  Cuando una columna permite tener un valor nulo, y la hora de insertar no se especifica un valor, 
+          span.etiqueta  NULL 
+          | será usado como valor por defecto. En el anterior ejemplo, el valor por defecto para  
+          span.etiqueta  poblacion 
+          | es 
+          span.etiqueta NULL.    
+        p.mb-4  Por ejemplo, si se quiere que 50000 sea el valor que por defecto se pondrá en la columna 
+          span.etiqueta  poblacion, 
+          | Se creará la tabla como:
+        p.mb-5  A continuación se debe escribir la sentencia,  pero esta vez se hará por partes.
+        .row.justify-content-center.mb-5
+          .col-lg-9
+            .tarjeta--gris.p-4
+              figure
+                img.h210(src='@/assets/curso/t2-c9.svg' alt='ejemplo de tabla')  
+        p.mb-5  Como la sentencia es larga se digitará por partes así:
 
+        ol.lista-ol--cuadro.lista-ol--separador.mb-5
+          li 
+            .lista-ol--cuadro__vineta
+              span 1
+            p Primero se escribirá 
+              span.etiqueta CREATE TABLE ciudad2 (nombre VARCHAR(20) NOT NULL,
+          li 
+            .lista-ol--cuadro__vineta
+              span 2
+            p.etiqueta Se presiona la tecla ENTER.
+          li 
+            .lista-ol--cuadro__vineta
+              span 3
+            p.etiqueta Luego se escribe el resto de la sentencia poblacion INT NULL DEFAULT 50000);           
 
-
-
+        p.mb-5  Recuerde que MySQL interpreta una sentencia solo cuando encuentra el carácter punto y coma (;). El resultado será:
+        .row.justify-content-center.mb-5
+          .col-lg-9
+            .tarjeta--gris.p-4
+              figure
+                img.h210(src='@/assets/curso/t2-c10.svg' alt='ejemplo de tabla')          
 
 
 
@@ -141,4 +208,6 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped></style>
+<style lang="sass" scoped>
+.h210{max-height: 210px}
+</style>

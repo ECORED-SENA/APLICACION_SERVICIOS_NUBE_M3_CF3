@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="663" height="107" viewBox="0 0 663 107">
+  <g id="t2-c14" transform="translate(-405 -6383)">
+    <text id="nombre_columna_tipo_dato_NOT_NULL_NULL_DEFAULT_valor_por_defecto_AUTO_INCREMENT_PRIMARY_KEY_COMMENT_string_definición_referencia_" data-name="nombre_columna tipo_dato [NOT NULL | NULL] [DEFAULT valor_por_defecto]
+        [AUTO_INCREMENT] [[PRIMARY] KEY] [COMMENT &apos;string&apos;]
+        [definición_referencia]" transform="translate(424 6407)" fill="#12263f" font-size="16" font-family="Consolas"><tspan x="0" y="15">nombre_columna tipo_dato [NOT NULL | NULL] [DEFAULT valor_por_defecto]</tspan><tspan x="0" y="39" xml:space="preserve">        [AUTO_INCREMENT] [[PRIMARY] KEY] [COMMENT &apos;string&apos;]</tspan><tspan x="0" y="63" xml:space="preserve">        [definición_referencia]</tspan></text>
+    <rect id="Rectangle_8231" data-name="Rectangle 8231" width="663" height="107" transform="translate(405 6383)" fill="none"/>
+  </g>
+</svg>

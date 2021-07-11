@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="739" height="147" viewBox="0 0 739 147">
+  <g id="Group_96352" data-name="Group 96352" transform="translate(-400 -5486)">
+    <text id="mysql_CREATE_TABLE_ciudad5_-_clave_INT_AUTO_INCREMENT_PRIMARY_KEY_COMMENT_Esto_es_Clave_principal_-_nombre_VARCHAR_50_NOT_NULL_-_poblacion_INT_NULL_DEFAULT_50000_Query_OK_0_rows_affected_0.08_sec_" data-name="mysql&gt; CREATE TABLE ciudad5
+    -&gt; (clave INT AUTO_INCREMENT PRIMARY KEY COMMENT &apos;Esto es Clave principal&apos;,
+    -&gt; nombre VARCHAR(50) NOT NULL,
+    -&gt; poblacion INT NULL DEFAULT 50000);
+Query OK, 0 rows affected (0.08 sec)" transform="translate(424 5503)" fill="#12263f" font-size="16" font-family="Consolas"><tspan x="0" y="15">mysql&gt; CREATE TABLE ciudad5</tspan><tspan x="0" y="39" xml:space="preserve">    -&gt; (clave INT AUTO_INCREMENT PRIMARY KEY COMMENT &apos;Esto es Clave principal&apos;,</tspan><tspan x="0" y="63" xml:space="preserve">    -&gt; nombre VARCHAR(50) NOT NULL,</tspan><tspan x="0" y="87" xml:space="preserve">    -&gt; poblacion INT NULL DEFAULT 50000);</tspan><tspan x="0" y="111">Query OK, 0 rows affected (0.08 sec)</tspan></text>
+    <rect id="Rectangle_8229" data-name="Rectangle 8229" width="739" height="147" transform="translate(400 5486)" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="175" viewBox="0 0 640 175">
+  <g id="t2-c12" transform="translate(-407 -5079)">
+    <text id="mysql_CREATE_TABLE_ciudad4_clave_INT_AUTO_INCREMENT_PRIMARY_KEY_-_nombre_VARCHAR_20_NOT_NULL_-_poblacion_INT_NULL_DEFAULT_50000_Query_OK_0_rows_affected_0.21_sec_mysql_" data-name="mysql &gt; CREATE TABLE ciudad4 (clave INT AUTO_INCREMENT PRIMARY KEY,
+     -&gt; nombre VARCHAR(20) NOT NULL,
+     -&gt; poblacion INT NULL DEFAULT 50000);
+Query OK, 0 rows affected (0.21 sec)
+ 
+mysql &gt;" transform="translate(424 5099)" fill="#12263f" font-size="16" font-family="Consolas"><tspan x="0" y="15">mysql &gt; CREATE TABLE ciudad4 (clave INT AUTO_INCREMENT PRIMARY KEY,</tspan><tspan x="0" y="39" xml:space="preserve">     -&gt; nombre VARCHAR(20) NOT NULL,</tspan><tspan x="0" y="63" xml:space="preserve">     -&gt; poblacion INT NULL DEFAULT 50000);</tspan><tspan x="0" y="87">Query OK, 0 rows affected (0.21 sec)</tspan><tspan x="0" y="111"> </tspan><tspan x="0" y="135">mysql &gt;</tspan></text>
+    <rect id="Rectangle_8228" data-name="Rectangle 8228" width="640" height="175" transform="translate(407 5079)" fill="none"/>
+  </g>
+</svg>

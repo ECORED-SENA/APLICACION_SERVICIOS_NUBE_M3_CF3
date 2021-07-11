@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="758" height="68" viewBox="0 0 758 68">
+  <g id="t2-c7" transform="translate(-412 -2773)">
+    <text id="mysql_CREATE_TABLE_ciudad1_nombre_VARCHAR_20_NOT_NULL_poblacion_INT_NULL_Query_OK_0_rows_affected_0.89_sec_" data-name="mysql&gt; CREATE TABLE ciudad1 (nombre VARCHAR(20) NOT NULL, poblacion INT NULL);
+Query OK, 0 rows affected (0.89 sec)" transform="translate(430 2784)" fill="#12263f" font-size="16" font-family="Consolas"><tspan x="0" y="15">mysql&gt; CREATE TABLE ciudad1 (nombre VARCHAR(20) NOT NULL, poblacion INT NULL);</tspan><tspan x="0" y="39">Query OK, 0 rows affected (0.89 sec)</tspan></text>
+    <rect id="Rectangle_8223" data-name="Rectangle 8223" width="758" height="68" transform="translate(412 2773)" fill="none"/>
+  </g>
+</svg>
