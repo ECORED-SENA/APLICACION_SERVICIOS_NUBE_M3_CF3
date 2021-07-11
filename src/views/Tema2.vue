@@ -185,6 +185,125 @@
             .tarjeta--gris.p-4
               figure
                 img.h210(src='@/assets/curso/t2-c10.svg' alt='ejemplo de tabla')          
+    h3.titulo-tercero
+      span.squareLetter C
+      | Claves Primarias
+    .row.mb-5.justify-content-center
+      .col-lg-10
+        p.mb-4 Es posible definir una clave primaria sobre una columna, usando la palabra clave 
+          span.etiqueta.text-bold PRIMARY KEY 
+          | o 
+          span.etiqueta.text-bold KEY.
+        p.mb-4 En cada tabla únicamente puede haber una clave primaria, y la columna sobre la que se concreta una clave primaria no puede poseer valores 
+          span.etiqueta NULL, 
+          | como ya se hizo mención. Si esto no se especifica de forma explícita, MySQL lo hará de forma automática.
+        p.mb-5 Por ejemplo, si se quiere crear un índice de la tabla de ciudad3 para la columna nombre, se creará la tabla así:
+        .row.justify-content-center.mb-5
+          .col-lg-9
+            .tarjeta--gris.p-4
+              figure
+                img.h210(src='@/assets/curso/t2-c11.svg' alt='ejemplo de tabla')     
+        p.mb-4  Emplear 
+          span.etiqueta NOT NULL PRIMARY KEY, 
+          | es lo mismo que 
+          span.etiqueta PRIMARY KEY, NOT NULL KEY 
+          | o simplemente 
+          span.etiqueta KEY.
+        p.mb-4  Hay una sintaxis distinta para crear claves primarias, que  generalmente es preferible, porque es más potente. De hecho, la que se ha explicado es un alias para la forma general, que no permite todas las funcionalidades (como, por ejemplo, crear claves primarias sobre varias columnas). 
+        p.mb-5  Se verá esta otra alternativa un poco más adelante.
+
+    h3.titulo-tercero
+      span.squareLetter D
+      | Columnas Autoincrementadas
+    .row.mb-5.justify-content-center
+      .col-lg-10
+        p.mb-4  En MySQL existe la posibilidad de crear una columna autoincrementada, sin embargo, esta columna sólo puede ser de tipo entero y llave primaria.
+        p.mb-4  Si cuando se inserta una fila se excluye el valor de la columna autoincrementada o si a un valor nulo se le intenta insertar para esa columna, su valor será calculado automáticamente, tomando el valor mayor de esa columna y sumándole uno, es decir, es secuencial. Permitiendo crear, una columna con un valor único y secuencias para cada fila de la tabla.
+        p.mb-5  Comúnmente, estas columnas son usadas como claves primarias secuenciales. SQL solo las permite en números enteros, es decir una columna de otro timo no podrá ser autoincrementable, de tal forma que la composición de clave primaria, que sea entera y autoincrementada es perfecta para ser usada como clave primaria artificial:
+        .row.justify-content-center.mb-5
+          .col-lg-9
+            .tarjeta--gris.p-4
+              figure
+                img.h210(src='@/assets/curso/t2-c12.svg' alt='ejemplo de tabla')    
+
+    h3.titulo-tercero
+      span.squareLetter E
+      | Comentarios
+    .row.mb-5.justify-content-center
+      .col-lg-10
+        p.mb-5  Adicionalmente, al momento de crear la tabla, se puede agregar un comentario a cada columna. Este comentario es usado como información adicional sobre una característica específica de la columna, y va en el apartado de documentación de la base de datos:
+        .row.justify-content-center.mb-5
+          .col-lg-9
+            .tarjeta--gris.p-4
+              figure
+                img.h210(src='@/assets/curso/t2-c12-1.svg' alt='ejemplo de tabla')    
+
+    h3.titulo-tercero
+      span.squareLetter F
+      | Descripción de la tabla
+    .row.mb-5.justify-content-center
+      .col-lg-10
+        p.mb-3  SQL tiene una sentencia que permite ver la descripción de una tabla esta sentencia es 
+          span.etiqueta DESC &lt;nombre_tabla&gt;
+        .row.justify-content-center.mb-5
+          .col-lg-9
+            .tarjeta--gris.p-4
+              figure
+                img.h210(src='@/assets/curso/t2-c13.svg' alt='ejemplo de tabla')  
+
+    h3.titulo-tercero
+      span.squareLetter G
+      | Documentación
+    .row.mb-5.justify-content-center
+      .col-lg-10
+        p.mb-4  MySQL tiene una amplia documentación, se puede mirar el siguiente enlace para la sintaxis de crear una tabla antes de continuar <a href='https://dev.mysql.com/doc/refman/8.0/en/create-table.html' target='_blank'>https://dev.mysql.com</a>,  luego se podrá extraer una parte para ir estudiando poco a poco.
+        p.mb-5  Pero SQL posee bastante opciones al momento de precisar columnas. También del tipo y el nombre, podemos concretar valores por defecto, admitir o no, que contengan valores tipo NULL, crear una clave primaria, indexar y muchas más. La sintaxis para definir las columnas es: 
+        .row.justify-content-center.mb-5
+          .col-lg-9
+            .tarjeta--gris.p-4
+              figure
+                img.h210(src='@/assets/curso/t2-c14.svg' alt='ejemplo de tabla')
+            figcaption  Nota: MySQL 8.0 Reference Manual (2021)  
+        p.mb-5  Esta documentación se puede leer de la siguiente forma:
+        .row.justify-content-center.mb-5
+          .col-lg-8
+            ul.lista-ul--color
+              li 
+                i.fas.fa-square
+                span.etiqueta nombre_columna: 
+                | es el nombre que se le dará a la columna a definir.
+              li
+                i.fas.fa-square
+                | tipo_dato: es el tipo de datos de la columna 
+                span.etiqueta  (INT, FLOAT, VAR CHAR).   
+              li
+                i.fas.fa-square
+                p 
+                  span.etiqueta [NOT NULL | NULL]: 
+                  | todo lo que encuentre encerrado entre corchetes 
+                  span.etiqueta ([]) 
+                  | significa que es opcional pude incluirse o no, dentro de las opciones.<br>Lo que encuentre entre separado por el carácter pai 
+                  span.etiqueta ( | ), 
+                  | significa que debe escoger una opción de las que están paradas por el pai.
+         
+              li
+                i.fas.fa-square
+                p De esta manera se quiere definir un de que se llame 
+                  span.etiqueta fecha 
+                  | de tipo 
+                  span.etiqueta DATE 
+                  | y que no sea nuleable la sintaxis sería:      
+          .row.justify-content-center.mb-5
+            .col-lg-9
+              .tarjeta--gris.p-4.mb-5
+                code  fecha DATE NOT NULL
+              p  Si quiero que el valor por defecto de esta columna sea la fecha actual del sistema puedo usar la sintaxis DEFAULT CURRENT_DATE así: 
+          .row.justify-content-center.mb-5
+            .col-lg-9
+              .tarjeta--gris.p-4
+                code  fecha DATE NOT NULL DEFAULT CURRENT_DATE       
+
+
 
 
 
