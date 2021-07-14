@@ -84,13 +84,19 @@ export default {
           {
             icono: 'far fa-file-alt',
             numero: '3.1',
-            titulo: '',
+            titulo: 'Inserción de registros',
             hash: 't_3_1',
           },
           {
             icono: 'far fa-file-alt',
             numero: '3.2',
-            titulo: '',
+            titulo: 'Edición de registros',
+            hash: 't_3_2',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '3.2',
+            titulo: 'Borrado de registros',
             hash: 't_3_2',
           },
         ],
