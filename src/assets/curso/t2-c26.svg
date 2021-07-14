@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="610" height="451" viewBox="0 0 610 451">
+  <g id="t2-c26" transform="translate(-495 -12922)">
+    <text id="mysql_CREATE_TABLE_personas3_-_id_persona_INT_AUTO_INCREMENT_PRIMARY_KEY_-_nombres_VARCHAR_45_-_fecha_DATE_-_ENGINE_InnoDB_Query_OK_0_rows_affected_0.16_sec_mysql_mysql_CREATE_TABLE_telefonos3_-_numero_VARCHAR_20_" data-name="mysql&gt; CREATE TABLE personas3 (
+    -&gt; id_persona INT AUTO_INCREMENT PRIMARY KEY,
+    -&gt; nombres VARCHAR(45),
+    -&gt; fecha DATE )
+    -&gt;  ENGINE=InnoDB;
+Query OK, 0 rows affected (0.16 sec)
+mysql&gt;
+mysql&gt; CREATE TABLE telefonos3 (
+    -&gt; numero VARCHAR(20)," transform="translate(537 12946)" fill="#12263f" font-size="16" font-family="Consolas"><tspan x="0" y="15">mysql&gt; CREATE TABLE personas3 (</tspan><tspan x="0" y="39" xml:space="preserve">    -&gt; id_persona INT AUTO_INCREMENT PRIMARY KEY,</tspan><tspan x="0" y="63" xml:space="preserve">    -&gt; nombres VARCHAR(45),</tspan><tspan x="0" y="87" xml:space="preserve">    -&gt; fecha DATE )</tspan><tspan x="0" y="111" xml:space="preserve">    -&gt;  ENGINE=InnoDB;</tspan><tspan x="0" y="135">Query OK, 0 rows affected (0.16 sec)</tspan><tspan x="0" y="159">mysql&gt;</tspan><tspan x="0" y="183">mysql&gt; CREATE TABLE telefonos3 (</tspan><tspan x="0" y="207" xml:space="preserve">    -&gt; numero VARCHAR(20),</tspan><tspan x="0" y="231" xml:space="preserve">    -&gt; persona_id INT NOT NULL,</tspan><tspan x="0" y="255" xml:space="preserve">    -&gt; KEY (numero),</tspan><tspan x="0" y="279" xml:space="preserve">    -&gt; FOREIGN KEY (persona_id) REFERENCES personas3 </tspan><tspan x="0" y="303">(id_persona)</tspan><tspan x="0" y="327" xml:space="preserve">    -&gt; ON DELETE RESTRICT ON UPDATE CASCADE</tspan><tspan x="0" y="351" xml:space="preserve">    -&gt; )ENGINE=InnoDB;</tspan><tspan x="0" y="375">Query OK, 0 rows affected (0.19 sec)</tspan><tspan x="0" y="399">mysql&gt;</tspan></text>
+    <rect id="Rectangle_8241" data-name="Rectangle 8241" width="610" height="451" transform="translate(495 12922)" fill="none"/>
+  </g>
+</svg>

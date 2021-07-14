@@ -476,9 +476,127 @@
       span.etiqueta personas2 (FOREIGN KEY (persona_id) REFERENCES personas2). 
       | La definición contiene las tareas a efectuar cuando se excluya una fila en la tabla 
       span.etiqueta personas2.
+    .row.justify-content-center.mb-5
+      .col-lg-5
+        .boxTable
+          .row.g-0
+            .col-lg-12.light-yellow.d-flex.align-items-center
+              .content-box.text-center.min-p
+                .h3 
+                  code
+                    ON DELETE &lt;opcion&gt;,
 
+            .col-lg-12.p-4
+              p.mb-4 Define las acciones que deben de realizar en la tabla actual, <b>cuando se elimine una fila en la tabla referenciada.</b>
+        
 
+      .col-lg-5
+        .boxTable
+          .row.g-0
+            .col-lg-12.light-yellow.d-flex.align-items-center
+              .content-box.text-center.min-p
+                .h3 
+                  code
+                    ON UPDATE &lt;opcion&gt;,
 
+            .col-lg-12.p-4
+              p.mb-4 Es semejante, define las acciones que deben de realizar en la tabla actual, <b>cuando se modifique o actualice la columna de una fila en la tabla referenciada.</b> 
+    p.mb-5  Hay cinco opciones distintas. A continuación, lo que hace cada una de ellas:
+    .row.justify-content-center
+      .col-lg-10
+        TabsA.color-acento-botones.mb-5.custom-labels
+          //- .tarjeta debe ir acompañado de una de una de estas clases => 
+          //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+          //- estas clases tambien tienen un modificador --borde
+          .tarjeta.color-acento-botones--borde.p-5(titulo="1. RESTRICT")
+            h3.mb-4.etiqueta RESTRICT
+            p Esta opción imposibilita borrar o editar filas en la tabla referenciada si hay filas con el mismo valor de clave foránea (MySQL 8.0 Reference Manual, 2021).
+          .tarjeta.color-acento-botones--borde.p-5(titulo="2. CASCADE")
+            h3.mb-4.etiqueta CASCADE
+            p Borrar o modificar una clave en una fila en la tabla referenciada con un valor fijo de clave, conlleva borrar las filas con el mismo valor de clave foránea o cambiar los valores de esas claves foráneas (MySQL 8.0 Reference Manual, 2021).
+
+          .tarjeta.color-acento-botones--borde.p-5(titulo="3. SET NULL")
+            h3.mb-4.etiqueta SET NULL
+            p Borrar o editar una clave en una fila en la tabla referenciada con un valor fijo de clave, involucra determinar el valor NULL a las claves foráneas con el mismo valor. (MySQL 8.0 Reference Manual, 2021)
+
+          .tarjeta.color-acento-botones--borde.p-5(titulo="4. NO ACTION")
+            h3.mb-4.etiqueta NO ACTION
+            p Las claves foráneas no se alteran, ni se eliminan filas en la tabla que las contiene.
+
+          .tarjeta.color-acento-botones--borde.p-5(titulo="5. SET DEFAULT")
+            h3.mb-4.etiqueta SET DEFAULT
+            p borrar o alterar una clave en una fila en la tabla referenciada con un valor explícito involucra asignar el valor por defecto a las claves foráneas con el mismo valor. (MySQL 8.0 Reference Manual, 2021)
+    .row.mb-5
+      .col-lg-3
+        p.mb-5.text-bold  Ejemplo:
+      .col-lg-7
+        .tarjeta--gris.p-4
+          figure
+            img(src='@/assets/curso/t2-c26.svg' alt='ejemplo de tabla') 
+
+    p.mb-4  Si se pretende borrar una fila de 
+      span.etiqueta personas3 
+      | con cierto valor de 
+      span.etiqueta id_persona,
+      | se provocará un error si existen filas en la tabla 
+      span.etiqueta telefonos3 
+      | en la columna 
+      span.etiqueta persona_id 
+      | con mismo valor. La fila de personas3 no será eliminada, a menos que previamente se eliminen las filas que tienen el mismo valor de clave foránea en la tabla 
+      span.etiqueta teléfonos3, 
+      | lo anterior debió que se ha definido restricción 
+      span.etiqueta DELETE RESTRICT.
+    p.mb-4  Si se modifica el valor de la columna 
+      span.etiqueta 'id_persona' 
+      | en la tabla 
+      span.etiqueta 'personas3', 
+      | se modificarán los valores de la columna 
+      span.etiqueta 'persona_id' 
+      | para conservar la analogía.
+    p.mb-5  Mirar los datos de las tablas 
+    span.etiqueta personas3 
+    | y 
+    span.etiqueta telefonos3.
+
+    .row.justify-content-center.mb-5
+      .col-lg-5
+        .tarjeta--gris.p-4.h-100
+          figure
+            img(src='@/assets/curso/t2-c27.svg' alt='ejemplo de tabla') 
+      .col-lg-5
+        .tarjeta--gris.p-4.h-100
+          figure
+            img(src='@/assets/curso/t2-c28.svg' alt='ejemplo de tabla') 
+
+    p.mb-5  Si se intenta borrar la fila correspondiente a "Fulanito" se provocará un error, debido a que hay dos filas en 
+    span.etiqueta 'teléfonos3' 
+    | con el valor 1 en la columna 
+    span.etiqueta 'persona_id'.
+    p.mb-5  Sí será posible borrar la fila correspondiente a "Menganito", debido a que no existe fila alguna en la tabla 
+    span.etiqueta3  'telefonos3' 
+    | con el valor 2 en la columna 
+    span.etiqueta 'persona_id'.
+    p.mb-5  Si alteramos el valor de 
+    span.etiqueta 'id_persona' 
+    | en la fila conveniente a "Tulanito", por el valor 3, por ejemplo, se determinará el valor 3 a la columna 
+    span.etiqueta 'persona_id' 
+    | de las filas 3ª y 6ª de la tabla 
+    span.etiqueta 'telefonos3':
+    br
+    br
+    Separador
+    br
+    br
+    #t_2_3.titulo-segundo
+      h2 2.3  Mostrar y eliminar tablas y bases de datos
+    p.mb-5  De vez en cuando es preciso eliminar una tabla, ya sea porque es más fácil crearla de nuevo que alterarla, o porque ya es prescindible.
+    p.mb-5  Para borrar una tabla se usará la sentencia DROP TABLE.
+    .row.justify-content-center.mb-5
+      .col-lg-8
+        .tarjeta--gris.p-4
+          code
+            DROP TABLE [IF EXISTS] tbl_name [, tbl_name]
+      
 
 
 
