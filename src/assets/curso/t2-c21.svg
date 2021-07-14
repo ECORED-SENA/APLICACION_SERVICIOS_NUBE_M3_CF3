@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="489" height="158" viewBox="0 0 489 158">
+  <g id="t2-c21" transform="translate(-406 -10369)">
+    <text id="mysql_CREATE_TABLE_personas_-_id_persona_INT_AUTO_INCREMENT_PRIMARY_KEY_-_nombres_VARCHAR_40_NOT_NULL_-_fecha_DATE_Query_OK_0_rows_affected_0.13_sec_" data-name="mysql&gt; CREATE TABLE personas (
+    -&gt; id_persona INT AUTO_INCREMENT PRIMARY KEY,
+    -&gt; nombres VARCHAR(40)NOT NULL,
+    -&gt; fecha DATE);
+Query OK, 0 rows affected (0.13 sec)" transform="translate(424 10387)" fill="#12263f" font-size="16" font-family="Consolas"><tspan x="0" y="15">mysql&gt; CREATE TABLE personas (</tspan><tspan x="0" y="39" xml:space="preserve">    -&gt; id_persona INT AUTO_INCREMENT PRIMARY KEY,</tspan><tspan x="0" y="63" xml:space="preserve">    -&gt; nombres VARCHAR(40)NOT NULL,</tspan><tspan x="0" y="87" xml:space="preserve">    -&gt; fecha DATE);</tspan><tspan x="0" y="111">Query OK, 0 rows affected (0.13 sec)</tspan></text>
+    <rect id="Rectangle_8238" data-name="Rectangle 8238" width="489" height="158" transform="translate(406 10369)" fill="none"/>
+  </g>
+</svg>

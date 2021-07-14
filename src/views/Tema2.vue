@@ -292,16 +292,196 @@
                   span.etiqueta fecha 
                   | de tipo 
                   span.etiqueta DATE 
-                  | y que no sea nuleable la sintaxis sería:      
-          .row.justify-content-center.mb-5
-            .col-lg-9
-              .tarjeta--gris.p-4.mb-5
-                code  fecha DATE NOT NULL
-              p  Si quiero que el valor por defecto de esta columna sea la fecha actual del sistema puedo usar la sintaxis DEFAULT CURRENT_DATE así: 
-          .row.justify-content-center.mb-5
-            .col-lg-9
+                  | y que no sea nuleable la sintaxis sería:
+
+              .row.justify-content-center.mb-3
+                .col-lg-12
+                  .tarjeta--gris.p-4.mb-5
+                    code  fecha DATE NOT NULL
+                  p  Si quiero que el valor por defecto de esta columna sea la fecha actual del sistema puedo usar la sintaxis 
+                    span.etiqueta DEFAULT CURRENT_DATE 
+                    | así: 
+              .row.justify-content-center.mb-5
+                .col-lg-12
+                  .tarjeta--gris.p-4
+                    code  fecha DATE NOT NULL DEFAULT CURRENT_DATE       
+
+    h3.titulo-tercero
+      span.squareLetter H
+      | Claves primarias compuestas
+
+    .row.justify-content-center
+      .col-lg-10
+        p.mb-5  La sintaxis para concretar claves primarias es:
+          .row.justify-content-center
+            .col-lg-8
               .tarjeta--gris.p-4
-                code  fecha DATE NOT NULL DEFAULT CURRENT_DATE       
+                code  definición_columnas <br>  | PRIMARY KEY (index_nombre_col,...) 
+              figcaption  Nota: MySQL 8.0 Reference Manual (2021)
+        p.mb-5 Usando esta sintaxis, en el ejemplo anterior que se dio para crear claves primarias y quedaría de la siguiente forma:   
+          .row.justify-content-center.mb-5
+            .col-lg-8
+              .tarjeta--gris.p-4
+                figure
+                  img(src='@/assets/curso/t2-c15.svg' alt='ejemplo de tabla')
+        p.mb-4 Pero de esta manera, se tiene mayor cantidad de opciones, por ejemplo, entre los paréntesis se puede detallar diversos nombres de columnas, para construir claves primarias acomodadas por diversas columnas:
+          .row.justify-content-center.mb-5
+            .col-lg-8
+              .tarjeta--gris.p-4
+                figure
+                  img(src='@/assets/curso/t2-c16.svg' alt='ejemplo de tabla')
+        p.mb-4 Se puede observar como quedó definida la tabla, se debe prestar especial atención a la columna de salida llamada Key:
+          .row.justify-content-center.mb-5
+            .col-lg-8
+              .tarjeta--gris.p-4
+                figure
+                  img(src='@/assets/curso/t2-c17.svg' alt='ejemplo de tabla')
+    
+    h3.titulo-tercero
+      span.squareLetter I
+      | Índices
+    .row.justify-content-center
+      .col-lg-10
+        p.mb-3  Se tienen tres tipos de índices. El primero pertenece a las claves primarias, que como se vió, también se pueden crear en la parte de definición de columnas.
+        p.mb-5  ¿Cuándo es oportuno crear índices?
+        ol.lista-ol--cuadro
+          li 
+            span.lista-ol--cuadro__vineta A
+            | Cuando se define una llave foránea.
+          li 
+            span.lista-ol--cuadro__vineta B
+            | Cuando se sabe que se realizarán consultas directas sobre esa columna.
+        p.mb-5 El segundo tipo de índice que existe, permite definir sobre una columna el índice. Para concretar estos índices se usan de manera indistinta las opciones 
+          span.etiqueta KEY o INDEX.
+        .row.justify-content-center.mb-5
+          .col-lg-8
+            .tarjeta--gris.p-4
+              figure
+                img(src='@/assets/curso/t2-c18.svg' alt='ejemplo de tabla')      
+        p.mb-5  O su semejante:
+        .row.justify-content-center.mb-5
+          .col-lg-8
+            .tarjeta--gris.p-4
+              figure
+                img(src='@/assets/curso/t2-c19.svg' alt='ejemplo de tabla')      
+    h3.titulo-tercero
+      span.squareLetter J
+      | Claves Únicas
+    .row.justify-content-center
+      .col-lg-10
+        p.mb-4  El tercer tipo de índices es para crear claves únicas así mismo sobre una columna o sobre varias. Para definir índices con claves únicas se debe de usar la opción 
+          span.etiqueta UNIQUE.
+        p.mb-4  La diferencia entre un índice único y un índice normal, es que en los índices únicos no se admite la inclusión de filas con datos repetidos en la columna o columnas de la tabla. Una excepción es el valor 
+          span.etiqueta NULL, 
+          | que sí se puede llegar a repetir varias veces.  
+        .row.justify-content-center.mb-5
+          .col-lg-8
+            .tarjeta--gris.p-4
+              figure
+                img(src='@/assets/curso/t2-c20.svg' alt='ejemplo de tabla')      
+        p.mb-3  Los índices son útiles para optimizar las consultas y las búsquedas de datos. Por medio de su uso es mucho más eficiente encontrar filas con ciertos valores de columnas, o mostrar los resultados en cierto orden. La alternativa es realizar búsquedas secuenciales (sin índices), que en tablas extensas requieren mucho tiempo y procesamiento de datos.
+
+    Separador
+    br
+    br
+
+    #t_2_2.titulo-segundo
+      h2 2.2  Claves foráneas
+
+    p.mb-3  En MySQL únicamente existe soporte para claves foráneas en tablas de tipo InnoDB. 
+    p.mb-5  InnoDB es el motor de almacenamiento por defecto de las últimas versiones de MySQL, no obstante, esto no imposibilita usarlas en otros tipos de tablas.
+    .row.justify-content-center.mb-5
+      .col-lg-6
+        figure
+          img(src='@/assets/curso/t2-i3.png' alt='ejemplo de innoBD')   
+    p.mb-5  Primero se crea la tabla persona:
+    .row.justify-content-center.mb-5
+      .col-lg-8
+        .tarjeta--gris.p-4
+          figure
+            img(src='@/assets/curso/t2-c21.svg' alt='ejemplo de tabla')      
+    p.mb-5  Si se quiere crear una base de datos que corresponda al modelo que se está presentando en la gráfica anterior las sentencias para la tabla teléfonos con la referencia a la tabla sería:
+    .row.justify-content-center.mb-5
+      .col-lg-8
+        .tarjeta--gris.p-4
+          figure
+            img(src='@/assets/curso/t2-c22.svg' alt='ejemplo de tabla')      
+   
+    p.mb-4  Se ha usado una definición a modo referencia para la columna 
+      span.etiqueta  “numero” 
+      | de la tabla 
+      span.etiqueta 'telefonos', 
+      | señalando que es una clave foránea oportuna a la columna 
+      span.etiqueta 'id_persona' 
+      | de la tabla 
+      span.etiqueta 'persona' 
+      | a través de la columna 
+      span.etiqueta  persona_id. 
+      | No obstante, aunque la sintaxis se evidencia.  
+    p.mb-4  La expresión 
+      span.etiqueta  DELETE CASCADE 
+      | , hace que, si se borra una fila de la tabla persona que tiene relacionados registros telefónicos a través de la columna 
+      span.etiqueta persona_id 
+      | en la tabla 
+      span.etiqueta telefonos, 
+      | estos registros (localizados en la tabla 
+      span.etiqueta telefonos)
+      | se borren si se borra el de la tabla 
+      span.etiqueta persona,
+      | a este tipo de condiciones se le llama restricción de integridad referencial.
+    p.mb-4  De igual forma 
+      span.etiqueta  UPDATE CASCADE
+      | , hace que, si el 
+      span.etiqueta id_persona 
+      | en una fila de la tabla persona es actualizado a otro valor y existen referencias en la columna 
+      span.etiqueta persona_id 
+      | de la tabla 
+      span.etiqueta telefonos 
+      | con el valor inicial, al cambar el valor en el registro 
+      span.etiqueta id_persona, 
+      | cambien también el valor en los registros en la columna 
+      span.etiqueta persona_id 
+      | de la tabla 
+      span.etiqueta telefonos. 
+      | A este tipo de condiciones también se le llama restricción de integridad referencial.  
+    p.mb-4  Y ejecutándola en la consola el resultado sería:
+    .row.justify-content-center.mb-5
+      .col-lg-8
+        .tarjeta--gris.p-4
+          figure
+            img(src='@/assets/curso/t2-c23.svg' alt='ejemplo de tabla')      
+    p.mb-4  Miremos otra variante de la misma sintaxis definiendo explícitamente que se usará el motor InnoDB para que las reglas de restricción de integridad apliquen:
+
+    .row.justify-content-center.mb-5
+      .col-lg-8
+        .tarjeta--gris.p-4
+          figure
+            img(src='@/assets/curso/t2-c24.svg' alt='ejemplo de tabla') 
+
+    p.mb-5  Y también para la tabla 
+      span.etiqueta telefonos2:
+    .row.justify-content-center.mb-5
+      .col-lg-8
+        .tarjeta--gris.p-4
+          figure
+            img(src='@/assets/curso/t2-c25.svg' alt='ejemplo de tabla')      
+    p.mb-5  Es necesario que la columna que posee una definición de clave foránea esté indexada 
+      span.etiqueta KEY(numero). 
+      | Sin embargo, esto no debe de generar preocupación, ya que si no se hace de forma clara, MySQL lo hará de forma implícita.
+    p.mb-5  Dicha forma precisa una clave foránea en la columna 
+      span.etiqueta persona_id, 
+      | La cual hace referencia a la columna 
+      span.etiqueta id_persona 
+      | de la tabla 
+      span.etiqueta personas2 (FOREIGN KEY (persona_id) REFERENCES personas2). 
+      | La definición contiene las tareas a efectuar cuando se excluya una fila en la tabla 
+      span.etiqueta personas2.
+
+
+
+
+
+
 
 
 

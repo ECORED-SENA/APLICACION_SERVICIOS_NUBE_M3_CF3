@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="746" height="180" viewBox="0 0 746 180">
+  <g id="t2-c22" transform="translate(-402 -10624)">
+    <text id="CREATE_TABLE_telefonos_persona_id_INT_NOT_NULL_REFERENCES_personas_id_ON_DELETE_CASCADE_ON_UPDATE_CASCADE_numero_VARCHAR_20_PRIMARY_KEY_tipo_VARCHAR_10_" data-name="CREATE TABLE telefonos (
+ persona_id INT NOT NULL REFERENCES personas (id) ON DELETE CASCADE ON UPDATE CASCADE,
+ numero VARCHAR(20) PRIMARY KEY,
+ tipo VARCHAR(10) 
+);" transform="translate(424 10645)" fill="#12263f" font-size="16" font-family="Consolas"><tspan x="0" y="15">CREATE TABLE telefonos (</tspan><tspan x="0" y="39" xml:space="preserve"> persona_id INT NOT NULL REFERENCES personas (id) ON DELETE CASCADE ON UPDATE </tspan><tspan x="0" y="63">CASCADE,</tspan><tspan x="0" y="87" xml:space="preserve"> numero VARCHAR(20) PRIMARY KEY,</tspan><tspan x="0" y="111" xml:space="preserve"> tipo VARCHAR(10) </tspan><tspan x="0" y="135">);</tspan></text>
+    <rect id="Rectangle_8239" data-name="Rectangle 8239" width="746" height="180" transform="translate(402 10624)" fill="none"/>
+  </g>
+</svg>

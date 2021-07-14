@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="610" height="151" viewBox="0 0 610 151">
+  <g id="t2-c15" transform="translate(-390 -7543)">
+    <text id="mysql_CREATE_TABLE_ciudad6_nombre_CHAR_20_NOT_NULL_-_poblacion_INT_NULL_DEFAULT_5000_-_PRIMARY_KEY_nombre_Query_OK_0_rows_affected_0.17_sec_" data-name="mysql&gt; CREATE TABLE ciudad6 (nombre CHAR(20) NOT NULL,
+    -&gt; poblacion INT NULL DEFAULT 5000,
+    -&gt; PRIMARY KEY (nombre));
+Query OK, 0 rows affected (0.17 sec)" transform="translate(424 7573)" fill="#12263f" font-size="16" font-family="Consolas"><tspan x="0" y="15">mysql&gt; CREATE TABLE ciudad6 (nombre CHAR(20) NOT NULL,</tspan><tspan x="0" y="39" xml:space="preserve">    -&gt; poblacion INT NULL DEFAULT 5000,</tspan><tspan x="0" y="63" xml:space="preserve">    -&gt; PRIMARY KEY (nombre));</tspan><tspan x="0" y="87">Query OK, 0 rows affected (0.17 sec)</tspan></text>
+    <rect id="Rectangle_8232" data-name="Rectangle 8232" width="610" height="151" transform="translate(390 7543)" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="652" height="319" viewBox="0 0 652 319">
+  <g id="t2-c17" transform="translate(-390 -8094)">
+    <text id="mysql_DESC_persona_---------------------_----------_------_-----_---------_-------_Field_Type_Null_Key_Default_Extra_---------------------_----------_------_-----_---------_-------_tipo_documento_char_2_NO" data-name="mysql&gt; DESC persona;
++---------------------+----------+------+-----+---------+-------+
+| Field               | Type     | Null | Key | Default | Extra |
++---------------------+----------+------+-----+---------+-------+
+| tipo_documento      | char(2)  | NO" transform="translate(424 8124)" fill="#12263f" font-size="16" font-family="Consolas"><tspan x="0" y="15">mysql&gt; DESC persona;</tspan><tspan x="0" y="39">+---------------------+----------+------+-----+---------+-------+</tspan><tspan x="0" y="63" xml:space="preserve">| Field               | Type     | Null | Key | Default | Extra |</tspan><tspan x="0" y="87">+---------------------+----------+------+-----+---------+-------+</tspan><tspan x="0" y="111" xml:space="preserve">| tipo_documento      | char(2)  | NO   | PRI | NULL    |       |</tspan><tspan x="0" y="135" xml:space="preserve">| documento_identidad | char(10) | NO   | PRI | NULL    |       |</tspan><tspan x="0" y="159" xml:space="preserve">| nombres             | char(30) | YES  |     | NULL    |       |</tspan><tspan x="0" y="183">+---------------------+----------+------+-----+---------+-------+</tspan><tspan x="0" y="207">3 rows in set (0.00 sec)</tspan><tspan x="0" y="231"> </tspan><tspan x="0" y="255">mysql&gt;</tspan></text>
+    <rect id="Rectangle_8234" data-name="Rectangle 8234" width="652" height="319" transform="translate(390 8094)" fill="none"/>
+  </g>
+</svg>

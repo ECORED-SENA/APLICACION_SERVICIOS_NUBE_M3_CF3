@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="610" height="223" viewBox="0 0 610 223">
+  <g id="t2-c16" transform="translate(-390 -7792)">
+    <text id="mysql_CREATE_TABLE_persona_-_tipo_documento_CHAR_2_NOT_NULL_-_documento_identidad_CHAR_10_NOT_NULL_-_nombres_CHAR_30_-_PRIMARY_KEY_tipo_documento_documento_identidad_Query_OK_0_rows_affected_0.09_sec_mysql_" data-name="mysql&gt; CREATE TABLE persona (
+    -&gt; tipo_documento CHAR(2) NOT NULL,
+    -&gt; documento_identidad CHAR(10) NOT NULL,
+    -&gt; nombres CHAR(30),
+    -&gt; PRIMARY KEY (tipo_documento, documento_identidad));
+Query OK, 0 rows affected (0.09 sec)
+mysql&gt;" transform="translate(424 7822)" fill="#12263f" font-size="16" font-family="Consolas"><tspan x="0" y="15">mysql&gt; CREATE TABLE persona (</tspan><tspan x="0" y="39" xml:space="preserve">    -&gt; tipo_documento CHAR(2) NOT NULL,</tspan><tspan x="0" y="63" xml:space="preserve">    -&gt; documento_identidad CHAR(10) NOT NULL,</tspan><tspan x="0" y="87" xml:space="preserve">    -&gt; nombres CHAR(30),</tspan><tspan x="0" y="111" xml:space="preserve">    -&gt; PRIMARY KEY (tipo_documento, documento_identidad));</tspan><tspan x="0" y="135">Query OK, 0 rows affected (0.09 sec)</tspan><tspan x="0" y="159">mysql&gt;</tspan></text>
+    <rect id="Rectangle_8233" data-name="Rectangle 8233" width="610" height="223" transform="translate(390 7792)" fill="none"/>
+  </g>
+</svg>

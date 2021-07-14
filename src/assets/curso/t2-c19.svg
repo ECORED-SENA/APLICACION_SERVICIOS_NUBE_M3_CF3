@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="175" viewBox="0 0 400 175">
+  <g id="t2-c19" transform="translate(-390 -9059)">
+    <text id="mysql_CREATE_TABLE_indices2_-_id_INT_-_nombre_VARCHAR_20_-_KEY_nombre_Query_OK_0_rows_affected_0.16_sec_" data-name="mysql&gt; CREATE TABLE indices2 (
+    -&gt; id INT,
+    -&gt; nombre VARCHAR(20),
+    -&gt; KEY (nombre));
+Query OK, 0 rows affected (0.16 sec)" transform="translate(424 9089)" fill="#12263f" font-size="16" font-family="Consolas"><tspan x="0" y="15">mysql&gt; CREATE TABLE indices2 (</tspan><tspan x="0" y="39" xml:space="preserve">    -&gt; id INT,</tspan><tspan x="0" y="63" xml:space="preserve">    -&gt; nombre VARCHAR(20),</tspan><tspan x="0" y="87" xml:space="preserve">    -&gt; KEY (nombre));</tspan><tspan x="0" y="111">Query OK, 0 rows affected (0.16 sec)</tspan></text>
+    <rect id="Rectangle_8236" data-name="Rectangle 8236" width="400" height="175" transform="translate(390 9059)" fill="none"/>
+  </g>
+</svg>
