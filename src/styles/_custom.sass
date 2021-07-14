@@ -34,8 +34,19 @@ code, .tarjeta--negra
   background-color: #FFCA28
   padding: 5px 12px
   margin-right: 10px
+.card
+  border-radius: 10px
 .card.outlined:hover
   border-color: #FFA726
+.custom-card > div
+  margin-left: 0
+  margin-right: -15%
+  padding-left: 0
+  padding-right: 15%
+.custom-card > img
+  min-width: auto
+  max-width: 250px
+  margin-top: -5%
 .cajon.color-secundario:before
   background-color: #FFA726
 .light-yellow
@@ -50,3 +61,109 @@ code, .tarjeta--negra
   width: fit-content
 pre code
   color: #000
+.customCaption
+  background-color: transparent
+  border-left: 4px solid #FFA726
+  font-weight: 400
+  font-size: 13px
+.customCaption-bold
+  background-color: transparent
+  border-left: 4px solid #FFA726
+  font-weight: 700
+  font-size: 18px
+.nW
+  width: auto
+
+.slideInLeft
+  -webkit-animation-name: slideInLeft
+  animation-name: slideInLeft
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+
+@-webkit-keyframes slideInLeft
+  0%
+    -webkit-transform: translateX(-100%)
+    transform: translateX(-100%)
+    visibility: visible
+
+  100%
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+
+@keyframes slideInLeft
+  0%
+    -webkit-transform: translateX(-100%)
+    transform: translateX(-100%)
+    visibility: visible
+
+  100%
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+.slideInRight
+  -webkit-animation-name: slideInRight
+  animation-name: slideInRight
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+
+@-webkit-keyframes slideInRight
+  0%
+    -webkit-transform: translateX(100%)
+    transform: translateX(100%)
+    visibility: visible
+
+  100%
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+
+@keyframes slideInRight
+  0%
+    -webkit-transform: translateX(100%)
+    transform: translateX(100%)
+    visibility: visible
+
+  100%
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+    
+.slideInUp
+  -webkit-animation-name: slideInUp
+  animation-name: slideInUp
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+
+@-webkit-keyframes slideInUp
+  0%
+    -webkit-transform: translateY(100%)
+    transform: translateY(100%)
+    visibility: visible
+
+  100%
+    -webkit-transform: translateY(0)
+    transform: translateY(0)
+
+@keyframes slideInUp
+  0%
+    -webkit-transform: translateY(100%)
+    transform: translateY(100%)
+    visibility: visible
+
+  100%
+    -webkit-transform: translateY(0)
+    transform: translateY(0)
+
+
+@media (max-width: 576px)
+  .custom-card
+    display: block
+  .tabs-b__tab__title
+    display: none
+  .customTabsx1 .col-6
+    width: 20%
+  .customTabsx1 .tabs-b__tab__icon
+    margin-bottom: 0px

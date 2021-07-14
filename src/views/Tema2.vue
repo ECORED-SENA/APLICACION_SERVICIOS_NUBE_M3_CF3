@@ -554,16 +554,20 @@
       span.etiqueta 'persona_id' 
       | para conservar la analogía.
     p.mb-5  Mirar los datos de las tablas 
-    span.etiqueta personas3 
-    | y 
-    span.etiqueta telefonos3.
+      span.etiqueta personas3 
+      | y 
+      span.etiqueta telefonos3.
 
     .row.justify-content-center.mb-5
       .col-lg-5
+        figcaption.customCaption.mb-2  Datos de la tabla 
+            span.etiqueta personas3
         .tarjeta--gris.p-4.h-100
           figure
             img(src='@/assets/curso/t2-c27.svg' alt='ejemplo de tabla') 
       .col-lg-5
+        figcaption.customCaption.mb-2  Datos de la tabla 
+            span.etiqueta telefonos3
         .tarjeta--gris.p-4.h-100
           figure
             img(src='@/assets/curso/t2-c28.svg' alt='ejemplo de tabla') 
