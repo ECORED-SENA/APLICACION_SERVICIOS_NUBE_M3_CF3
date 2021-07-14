@@ -51,20 +51,26 @@ export default {
         nombreRuta: 'tema2',
         icono: 'far fa-file-alt',
         numero: '2',
-        titulo: 'Producción Audiovisual',
+        titulo: 'SQL para la creación y eliminación de bases de datos - DDL',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '2.1',
-            titulo: '',
+            titulo: 'SQL para la creación y eliminación de Tablas',
             hash: 't_2_1',
           },
           {
             icono: 'far fa-file-alt',
             numero: '2.2',
-            titulo: '',
+            titulo: 'Claves foráneas',
             hash: 't_2_2',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '2.3',
+            titulo: 'Mostrar y eliminar tablas y bases de datos',
+            hash: 't_2_3',
           },
         ],
       },
@@ -72,7 +78,7 @@ export default {
         nombreRuta: 'tema3',
         icono: 'far fa-file-alt',
         numero: '3',
-        titulo: 'Fundamentación Textil',
+        titulo: 'Interface de Línea de Comandos de MySQL',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -93,7 +99,7 @@ export default {
         nombreRuta: 'tema4',
         icono: 'far fa-file-alt',
         numero: '4',
-        titulo: 'Fundamentación Textil',
+        titulo: 'SQL para consulta de datos - DML',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -114,7 +120,7 @@ export default {
         nombreRuta: 'tema5',
         icono: 'far fa-file-alt',
         numero: '5',
-        titulo: 'Fundamentación Textil',
+        titulo: 'Consulta multitablas - DML',
         desarrolloContenidos: true,
         subMenu: [
           {

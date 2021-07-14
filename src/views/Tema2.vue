@@ -590,12 +590,48 @@
     #t_2_3.titulo-segundo
       h2 2.3  Mostrar y eliminar tablas y bases de datos
     p.mb-5  De vez en cuando es preciso eliminar una tabla, ya sea porque es más fácil crearla de nuevo que alterarla, o porque ya es prescindible.
-    p.mb-5  Para borrar una tabla se usará la sentencia DROP TABLE.
+    p.mb-5  Para borrar una tabla se usará la sentencia 
+      span.etiqueta DROP TABLE.
     .row.justify-content-center.mb-5
-      .col-lg-8
+      .col-lg-8.mb-5
         .tarjeta--gris.p-4
           code
             DROP TABLE [IF EXISTS] tbl_name [, tbl_name]
+      .col-lg-8.mb-5
+        .tarjeta--gris.p-4
+          pre
+            code mysql&gt; DROP TABLE telefonos2; <br>Query OK, 0 rows affected (0.75 sec)<br>mysql&gt;  
+    p.mb-5  Se puede agregar las palabras
+      span.etiqueta IF EXISTS
+      | para impedir errores si la tabla a eliminar no existe.       
+    .row.justify-content-center.mb-5     
+      .col-lg-8.mb-5
+        .tarjeta--gris.p-4
+          pre
+            code mysql&gt; DROP TABLE telefonos5;<br>ERROR 1051 (42S02): Unknown table 'telefonos5'<br>mysql&gt; DROP TABLE IF EXISTS telefonos5;<br>Query OK, 0 rows affected, 1 warning (0.00 sec)<br>mysql&gt;
+    p.mb-5  De manera similar, se puede borrar bases de datos enteras, utilizando la sentencia 
+      span.etiqueta DROP DATABASE. 
+      | La sintaxis asimismo es muy sencilla, a continuación, se creará una base de datos, se creará una tabla y se borrará la base de datos.
+    .row.justify-content-center.mb-5
+      .col-lg-8
+        .tarjeta--gris.p-4.h-100
+          figure
+            img(src='@/assets/curso/t2-c31.svg' alt='ejemplo de tabla') 
+          figcaption  Nota: MySQL 8.0 Reference Manual (2021).
+    .row.tarjeta-azul.py-5
+      .col-lg-5
+        figure
+          img.h315(src='@/assets/curso/t2-i4.svg' alt='imagen decorativa relacionado a usuario y lineas de codigo') 
+      .col-lg-7
+        .titulo-segundo
+          .h2 Ejercicios prácticos
+        p.mb-5  Se propone que se revise y estudie dos ejercicios de repaso, que están en el documento adjunto “Ejercicios Prácticos”, en ellos  están completamente desarrollados dos ejercicios un poco más extensos, pero que recogen la temática hasta ahora vista, con la diferencia que los ejercicios propuestos <b>son más próximos a problemas de la vida real.</b>
+        a.boton.color-acento-botones.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+
+
+  
       
 
 
@@ -627,4 +663,6 @@ export default {
 
 <style lang="sass" scoped>
 .h210{max-height: 210px}
+.h315{max-height: 315px}
+.tarjeta-azul{background-color: #E8F0F8}
 </style>
