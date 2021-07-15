@@ -24,7 +24,7 @@ export default {
         nombreRuta: 'tema1',
         icono: 'far fa-file-alt',
         numero: '1',
-        titulo: 'Componentes',
+        titulo: 'Interface de Línea de Comandos de MySQL',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -111,14 +111,32 @@ export default {
           {
             icono: 'far fa-file-alt',
             numero: '4.1',
-            titulo: '',
+            titulo: 'Funciones en MySQL',
             hash: 't_4_1',
           },
           {
             icono: 'far fa-file-alt',
             numero: '4.2',
-            titulo: '',
+            titulo: 'Operadores',
             hash: 't_4_2',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '4.3',
+            titulo: 'Ordenar resultados',
+            hash: 't_4_3',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '4.4',
+            titulo: '',
+            hash: 't_4_4',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '4.5',
+            titulo: 'Agrupar Filas',
+            hash: 't_4_5',
           },
         ],
       },
