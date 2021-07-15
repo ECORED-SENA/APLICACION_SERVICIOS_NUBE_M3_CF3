@@ -415,10 +415,49 @@
         figure
           img.shadow-box(src='@/assets/curso/t4-i15.jpg' alt='ejemplo de tabla')    
 
+    p.mb-5 Se puede agrupar por varios criterios a la vez, por ejemplo si se ordenan los resultados por la duración y si hay repetidos, que el siguiente criterio sea la fecha de registro. 
+    .row.justify-content-center.mb-5
+      .col-lg-8
+        .tarjeta--gris.p-4
+          pre
+            code SELECT * FROM cdr<br>ORDER BY  facturar  DESC , registro  ASC
+    .row.justify-content-center.mb-5
+      .col-lg-6
+        figure
+          img.shadow-box(src='@/assets/curso/t4-i15.jpg' alt='ejemplo de tabla')    
+
+    Separador
+    br
+    br
+
+    #t_4_4.titulo-segundo
+      h2 4.4  Listar y limitar resultados
+    .row.mb-4
+      .col-lg-3
+        figure
+          img(src='@/assets/curso/t4-i17.svg' alt='imagen decorativa') 
+      .col-lg-9
+        p.mb-5  La principal forma de limitar resultados es filtrando condiciones en los datos con la cláusula 
+          span.etiqueta WHERE, 
+          | sin embargo cuando a pesar de eso los datos son muchos, es necesario paginarlo o presentarlo por partes, para ello se miraría la cláusula 
+          span.etiqueta LIMIT. 
+        p.mb-5  <b>Ejemplo:</b> se desea filtrar las llamadas larga distancia o celular de todo el año 2016 que cuestan más de $1.000, y presentarlas ordenadas de mayor a menor por el precio.
+    .row.justify-content-center.mb-5
+      .col-lg-5
+        .tarjeta--gris.p-4
+          pre
+            code SELECT *, CEIL(facturar/60) * 85 AS valor<br>FROM cdr<br>WHERE YEAR(registro) = 2016<br>AND LENGTH(destino) = 10<br>AND CEIL(facturar/60) * 85 &gt; 200<br>ORDER BY valor DESC
+      .col-lg-5
+        figure
+          img.shadow-box(src='@/assets/curso/t4-i18.jpg' alt='captura de pantalla lineas de código') 
 
 
+    Separador
+    br
+    br
 
-
+    #t_4_5.titulo-segundo
+      h2 4.5  Agrupar Filas
 
 
 </template>
