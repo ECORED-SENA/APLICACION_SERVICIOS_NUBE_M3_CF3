@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="610" height="321" viewBox="0 0 610 321">
+  <g id="t4-t4" transform="translate(-600 -7651.5)">
+    <rect id="Rectangle_7850" data-name="Rectangle 7850" width="610" height="40" transform="translate(600 7652)" fill="#ffca28"/>
+    <text id="A" transform="translate(666 7661)" fill="#12263f" font-size="18" font-family="Roboto-Black, Roboto" font-weight="800"><tspan x="-6.13" y="17">A</tspan></text>
+    <text id="B" transform="translate(869 7661)" fill="#12263f" font-size="18" font-family="Roboto-Black, Roboto" font-weight="800"><tspan x="-5.805" y="17">B</tspan></text>
+    <text id="A_AND_B" data-name="A AND B" transform="translate(1072 7661)" fill="#12263f" font-size="18" font-family="Roboto-Black, Roboto" font-weight="800"><tspan x="-34.686" y="17">A AND B</tspan></text>
+    <rect id="Rectangle_7858" data-name="Rectangle 7858" width="610" height="35" transform="translate(600 7937)" fill="#f6f6f6"/>
+    <rect id="Rectangle_7862" data-name="Rectangle 7862" width="610" height="35" transform="translate(600 7797)" fill="#f6f6f6"/>
+    <rect id="Rectangle_7861" data-name="Rectangle 7861" width="610" height="35" transform="translate(600 7867)" fill="#f6f6f6"/>
+    <rect id="Rectangle_7864" data-name="Rectangle 7864" width="610" height="35" transform="translate(600 7727)" fill="#f6f6f6"/>
+    <rect id="Rectangle_7859" data-name="Rectangle 7859" width="610" height="35" transform="translate(600 7902)" fill="#fff"/>
+    <rect id="Rectangle_7863" data-name="Rectangle 7863" width="610" height="35" transform="translate(600 7762)" fill="#fff"/>
+    <rect id="Rectangle_7860" data-name="Rectangle 7860" width="610" height="35" transform="translate(600 7832)" fill="#fff"/>
+    <rect id="Rectangle_7865" data-name="Rectangle 7865" width="610" height="35" transform="translate(600 7692)" fill="#fff"/>
+    <text id="FALSO" transform="translate(650 7700)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="-23.527" y="15">FALSO</tspan></text>
+    <text id="FALSO-2" data-name="FALSO" transform="translate(650 7735)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="-23.527" y="15">FALSO</tspan></text>
+    <text id="NULL" transform="translate(650 7945)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="-19.5" y="15">NULL</tspan></text>
+    <text id="FALSO-3" data-name="FALSO" transform="translate(650 7840)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="-23.527" y="15">FALSO</tspan></text>
+    <text id="VERDADERO" transform="translate(650 7770)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="-45.164" y="15">VERDADERO</tspan></text>
+    <text id="VERDADERO-2" data-name="VERDADERO" transform="translate(650 7910)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="-45.164" y="15">VERDADERO</tspan></text>
+    <text id="NULL-2" data-name="NULL" transform="translate(650 7875)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="-19.5" y="15">NULL</tspan></text>
+    <text id="VERDADERO-3" data-name="VERDADERO" transform="translate(650 7805)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="-45.164" y="15">VERDADERO</tspan></text>
+    <text id="FALSO-4" data-name="FALSO" transform="translate(853 7700)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="-23.527" y="15">FALSO</tspan></text>
+    <text id="VERDADERO-4" data-name="VERDADERO" transform="translate(853 7735)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="-45.164" y="15">VERDADERO</tspan></text>
+    <text id="VERDADERO-5" data-name="VERDADERO" transform="translate(853 7945)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="-45.164" y="15">VERDADERO</tspan></text>
+    <text id="NULL-3" data-name="NULL" transform="translate(853 7840)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="-19.5" y="15">NULL</tspan></text>
+    <text id="FALSO-5" data-name="FALSO" transform="translate(853 7770)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="-23.527" y="15">FALSO</tspan></text>
+    <text id="NULL-4" data-name="NULL" transform="translate(853 7910)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="-19.5" y="15">NULL</tspan></text>
+    <text id="FALSO-6" data-name="FALSO" transform="translate(853 7875)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="-23.527" y="15">FALSO</tspan></text>
+    <text id="VERDADERO-6" data-name="VERDADERO" transform="translate(853 7805)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="-45.164" y="15">VERDADERO</tspan></text>
+    <text id="FALSO-7" data-name="FALSO" transform="translate(1056 7700)" fill="#12263f" font-size="16" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="-23.789" y="15">FALSO</tspan></text>
+    <text id="FALSO-8" data-name="FALSO" transform="translate(1056 7735)" fill="#12263f" font-size="16" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="-23.789" y="15">FALSO</tspan></text>
+    <text id="NULL-5" data-name="NULL" transform="translate(1056 7945)" fill="#12263f" font-size="16" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="-19.578" y="15">NULL</tspan></text>
+    <text id="FALSO-9" data-name="FALSO" transform="translate(1056 7840)" fill="#12263f" font-size="16" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="-23.789" y="15">FALSO</tspan></text>
+    <text id="FALSO-10" data-name="FALSO" transform="translate(1056 7770)" fill="#12263f" font-size="16" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="-23.789" y="15">FALSO</tspan></text>
+    <text id="NULL-6" data-name="NULL" transform="translate(1056 7910)" fill="#12263f" font-size="16" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="-19.578" y="15">NULL</tspan></text>
+    <text id="FALSO-11" data-name="FALSO" transform="translate(1056 7875)" fill="#12263f" font-size="16" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="-23.789" y="15">FALSO</tspan></text>
+    <text id="VERDADERO-7" data-name="VERDADERO" transform="translate(1056 7805)" fill="#12263f" font-size="16" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="-45.664" y="15">VERDADERO</tspan></text>
+    <path id="Line_149" data-name="Line 149" d="M0,40.5a1,1,0,0,1-1-1V0A1,1,0,0,1,0-1,1,1,0,0,1,1,0V39.5A1,1,0,0,1,0,40.5Z" transform="translate(1006 7652.5)" fill="#fff"/>
+    <path id="Line_151" data-name="Line 151" d="M0,40.5a1,1,0,0,1-1-1V0A1,1,0,0,1,0-1,1,1,0,0,1,1,0V39.5A1,1,0,0,1,0,40.5Z" transform="translate(803 7652.5)" fill="#fff"/>
+    <path id="Line_150" data-name="Line 150" d="M0,280.5a.5.5,0,0,1-.5-.5V0A.5.5,0,0,1,0-.5.5.5,0,0,1,.5,0V280A.5.5,0,0,1,0,280.5Z" transform="translate(1006 7692)" fill="#afafaf"/>
+    <path id="Line_152" data-name="Line 152" d="M0,280.5a.5.5,0,0,1-.5-.5V0A.5.5,0,0,1,0-.5.5.5,0,0,1,.5,0V280A.5.5,0,0,1,0,280.5Z" transform="translate(803 7692)" fill="#afafaf"/>
+  </g>
+</svg>

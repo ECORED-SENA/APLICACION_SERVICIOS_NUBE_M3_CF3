@@ -215,14 +215,205 @@
           span.etiqueta NULL.
         p.mb-5  Se ejecuta la siguiente sentencia en la consulta para que mirar la naturaleza de los datos.
 
-    .row.justify-content-center
+    .row.justify-content-center.mb-5
       .col-lg-8
         .tarjeta--gris.p-4
           figure
             img.nW(src='@/assets/curso/t4-c3.svg' alt='ejemplo de tabla') 
 
+    .row.justify-content-center
+      .col-lg-10
+        TabsA.color-acento-botones.mb-5.custom-labels
+          //- .tarjeta debe ir acompañado de una de una de estas clases => 
+          //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+          //- estas clases tambien tienen un modificador --borde
+          .tarjeta.color-acento-botones--borde.p-5(titulo="Operador AND")
+            h3.mb-4.etiqueta Operador AND
+            p.mb-3  SQL se puede usar el operador AND, que se trata de un operador binario, es decir, requiere de dos operandos. El resultado de la operación es verdadero, sólo si ambos operandos son verdaderos, falso si cualquier operando es falso o nulo si alguno de los dos es nulo. 
+            p.mb-5  Esto se representa mediante la siguiente tabla de verdad:
+            .tabla-a.color-acento-botones.mb-4 
+              table.table.text-center
+                caption Nota: MySQL AND Operator By Examples (2020).
+                thead
+                  tr
+                    th A
+                    th B
+                    th A AND B
+                tbody
+                  tr
+                    td FALSO
+                    td FALSO
+                    td FALSO
+                  tr
+                    td FALSO
+                    td VERDADERO
+                    td FALSO
+                  tr
+                    td VERDADERO
+                    td FALSO
+                    td FALSO
+                  tr
+                    td VERDADERO
+                    td VERDADERO
+                    td VERDADERO
+                  tr
+                    td FALSO
+                    td NULL
+                    td FALSO
+                  tr
+                    td NULL
+                    td FALSO
+                    td FALSO
+                  tr
+                    td VERDADERO
+                    td NULL
+                    td NULL
+                  tr
+                    td NULL
+                    td VERDADERO
+                    td NULL
+                    
+            .tarjeta--gris.p-4
+              figure
+                img.nW(src='@/assets/curso/t4-c4.svg' alt='ejemplo de tabla') 
 
 
+          .tarjeta.color-acento-botones--borde.p-5(titulo="Operador OR")
+            h3.mb-4.etiqueta Operador OR
+            p.mb-3  SQL este operador también tiene dos formas equivalentes OR  
+            p.mb-4  El operador OR también es binario. Si ambos operandos siendo diferentes de NULL y el resultado es verdadero si alguno de ellos es verdadero y falso si los dos son falsos. Si uno de los operandos es NULL el resultado es verdadero si el otro es verdadero y NULL en el si el otro es falso. 
+            p.mb-5  La tabla de verdad es
+            .tabla-a.color-acento-botones.mb-4 
+              table.table.text-center
+                caption Nota: MySQL OR Operator (2020).
+                thead
+                  tr
+                    th A
+                    th B
+                    th A OR B
+                tbody
+                  tr
+                    td FALSO
+                    td FALSO
+                    td FALSO
+                  tr
+                    td FALSO
+                    td VERDADERO
+                    td VERDADERO
+                  tr
+                    td VERDADERO
+                    td FALSO
+                    td VERDADERO
+                  tr
+                    td VERDADERO
+                    td VERDADERO
+                    td VERDADERO
+                  tr
+                    td FALSO
+                    td NULL
+                    td NULL
+                  tr
+                    td NULL
+                    td FALSO
+                    td NULL
+                  tr
+                    td VERDADERO
+                    td NULL
+                    td VERDADERO
+                  tr
+                    td NULL
+                    td VERDADERO
+                    td VERDADERO
+            .tarjeta--gris.p-4
+              figure
+                img.nW(src='@/assets/curso/t4-c4-1.svg' alt='ejemplo de tabla') 
+    h3.titulo-tercero
+        span.squareLetter B
+        | Operadores de igualdad+
+    .row.justify-content-center.mb-3
+      .col-lg-10    
+        p  El operador igual (=) compara dos expresiones y da como resultado TRUE si son iguales o FALSE si son diferentes. Ya lo hemos usado en ejemplos anteriormente:
+    .row.justify-content-center.mb-5
+      .col-lg-8
+        .tarjeta--gris.p-4
+          pre
+            code  SELECT * FROM cdr  WHERE registro = '2018-01-02 10:19:08'
+
+    h3.titulo-tercero
+        span.squareLetter C
+        | Operadores de desigualdad
+    .row.justify-content-center.mb-5
+      .col-lg-5
+        .tabla-a.color-acento-botones.mb-4 
+          table.table.text-center
+            caption Nota: MySQL OR Operator (2020).
+            thead
+              tr
+                th Operador
+                th Descripción
+            tbody
+              tr
+                td &lt;=
+                td Menor o igual
+              tr
+                td &lt;
+                td Menor
+              tr
+                td &gt;
+                td Mayor
+              tr
+                td &gt;=
+                td Mayor o igual                
+        .tarjeta--gris.p-4
+          pre
+            code SELECT * FROM cdr <br>WHERE registro &gt;= '2018-01-02 10:19:08' <br>AND registro &lt;= '2018-01-04 10:19:08'
+
+
+      .col-lg-5
+        figure
+          img.shadow-box(src='@/assets/curso/t4-i12.jpg' alt='ejemplo de tabla') 
+    
+    Separador
+    br
+    br
+    #t_4_3.titulo-segundo
+      h2 4.3  Ordenar resultados
+    .row.mb-4
+      .col-lg-3
+        figure
+          img(src='@/assets/curso/t4-i12-1.svg' alt='ejemplo de tabla') 
+      .col-lg-9
+        p.mb-5  También, se puede agregar una cláusula de   para lograr resultados ordenados por la columna que se quiera y se puede hacer ascendente o descendente con la cláusula ASC y DESC respectivamente.
+        p.mb-5  Por ejemplo se desea listas las llamadas en orden de duración descendente (de mayor a menor):
+    .row.justify-content-center.mb-5
+      .col-lg-8
+        .tarjeta--gris.p-4
+          pre
+            code SELECT * FROM cdr ORDER BY duracion DESC
+    .row.justify-content-center.mb-5
+      .col-lg-6
+        figure
+          img.shadow-box(src='@/assets/curso/t4-i13.jpg' alt='ejemplo de tabla') 
+    p.mb-5  Y también de manera ascendente por la fecha: 
+    .row.justify-content-center.mb-5
+      .col-lg-8
+        .tarjeta--gris.p-4
+          pre
+            code SELECT * FROM cdr ORDER BY registro ASC
+    .row.justify-content-center.mb-5
+      .col-lg-6
+        figure
+          img.shadow-box(src='@/assets/curso/t4-i14.jpg' alt='ejemplo de tabla')     
+    p.mb-5  También se puede ordenar por el resultado de operación, aunque el rendimiento de la consulta disminuye. Ejemplo, para llamadas de larga distancia o celular a 85 pesos el minuto, que se ordene por la llamada que más costo tenga a la que menos costo tenga.
+    .row.justify-content-center.mb-5
+      .col-lg-8
+        .tarjeta--gris.p-4
+          pre
+            code SELECT *, CEIL(facturar/60) * 85 AS valor FROM cdr<br>WHERE LENGTH(destino) = 10 <br>ORDER BY  CEIL(facturar/60) * 85  DESC
+    .row.justify-content-center.mb-5
+      .col-lg-6
+        figure
+          img.shadow-box(src='@/assets/curso/t4-i15.jpg' alt='ejemplo de tabla')    
 
 
 
