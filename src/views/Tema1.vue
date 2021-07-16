@@ -9,7 +9,7 @@
 
     .row.justify-content-center.mb-5
       .col-lg-10
-        .bloque-texto-a.color-secundario.p-4.p-md-5 
+        .bloque-texto-a.color-secundario.p-4.p-md-5.slideInUp 
           .row.m-0.align-items-center.justify-content-between
             .col-lg-3.mb-4.mb-lg-0
               figure.mb-5
@@ -17,10 +17,8 @@
 
             .col-lg-9
               .bloque-texto-a__texto.p-4
-                p Think about all the possibilities. A good composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Nothing of without working at it. Be impossible to ignore.
-                  br
-                  br
-                  | Stand so tall that they can’t look past you. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect accept possibility of failure. 
+                p.mb-3  Al iniciar a trabajar con el SGBD, existen varias maneras de enlazar una comunicación con el servidor de MySQL. Generalmente en el software, se usará un API para hacer las consultas y otras operaciones con el servidor. <b>Por ejemplo, en PHP, esta API está integrada con el lenguaje.</b>
+                p.mb-3  En este punto se usará MySQL de forma directa, por medio de un cliente ejecutándose desde una consola (una ventana de comandos en Windows). <b>En otras secciones se explicarán los distintos APIs.</b>
 
     #t_1_1.titulo-segundo
       h2 1.1  Aplicación cliente de MySQL

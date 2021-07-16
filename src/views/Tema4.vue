@@ -450,6 +450,56 @@
       .col-lg-5
         figure
           img.shadow-box(src='@/assets/curso/t4-i18.jpg' alt='captura de pantalla lineas de código') 
+    p.mb-5  Los datos que la consulta arroja seguramente son muchos. Para saber cuántos resultados cumplen con las condiciones de la cláusula 
+      span.etiqueta WHERE, 
+      | es preciso contarlos con la función 
+      span.etiqueta COUNT, 
+      | pero la consulta no debe usar la cláusula 
+      span.etiqueta ORDER BY 
+      | porque la función 
+      span.etiqueta COUNT 
+      | solamente arroja una fila y con una única columna, por lo tanto, el resultado no se puede ordenar.
+    .row.justify-content-center.mb-5
+      .col-lg-5
+        .tarjeta--gris.p-4
+          pre
+            code SELECT COUNT(*)<br>FROM cdr<br>WHERE YEAR(registro) = 2016<br>AND LENGTH(destino) = 10<br>AND CEIL(facturar/60) * 85 &gt; 200
+      .col-lg-5
+        figure
+          img.shadow-box(src='@/assets/curso/t4-i19.jpg' alt='captura de pantalla lineas de código') 
+   
+    p.mb-5  Como se pueden ver son muchos registros, pero si el interés es mostrar los primeros10, utilice la cláusula 
+      span.etiqueta LIMIT.
+    .row.justify-content-center.mb-5
+      .col-lg-5
+        .tarjeta--gris.p-4
+          pre
+            code SELECT COUNT(*)<br>FROM cdr<br>WHERE YEAR(registro) = 2016<br>AND LENGTH(destino) = 10<br>AND CEIL(facturar/60) * 85 &gt; 200
+      .col-lg-5
+        figure
+          img.shadow-box(src='@/assets/curso/t4-i20.jpg' alt='captura de pantalla lineas de código') 
+
+    p.mb-5  Para lograr hacer esto la cláusula 
+      span.etiqueta LIMIT 
+      | permite dos parámetros. Cuando se utilizan los dos, el primero muestra el número de la primera fila a traer, y el segundo el número de filas a traer. Se puede por ejemplo, rescatar las filas de dos en dos:
+    .row.justify-content-center.mb-5
+      .col-lg-5
+        .tarjeta--gris.p-4
+          pre
+            code SELECT *, CEIL(facturar/60) * 85 AS valor <br>FROM cdr<br>WHERE YEAR(registro) = 2016<br>AND LENGTH(destino) = 10<br>AND CEIL(facturar/60) * 85 &gt; 200<br>ORDER BY valor DESC<br>LIMIT 10, 10
+      .col-lg-5
+        figure
+          img.shadow-box(src='@/assets/curso/t4-i21.jpg' alt='captura de pantalla lineas de código') 
+
+    p.mb-5 Y con la siguiente consulta se traen los próximos 10
+    .row.justify-content-center.mb-5
+      .col-lg-5
+        .tarjeta--gris.p-4
+          pre
+            code SELECT *, CEIL(facturar/60) * 85 AS valor<br>FROM cdr<br>WHERE YEAR(registro) = 2016<br>AND LENGTH(destino) = 10<br>AND CEIL(facturar/60) * 85 &gt; 200<br>ORDER BY valor DESC<br>LIMIT 20, 10
+      .col-lg-5
+        figure
+          img.shadow-box(src='@/assets/curso/t4-i22.jpg' alt='captura de pantalla lineas de código') 
 
 
     Separador
@@ -458,6 +508,50 @@
 
     #t_4_5.titulo-segundo
       h2 4.5  Agrupar Filas
+    .row.mb-4
+      .col-lg-3
+        figure
+          img(src='@/assets/curso/t4-i23.svg' alt='imagen decorativa') 
+      .col-lg-9
+        p.mb-5  Se pueden agrupar filas en la salida con la sentencia 
+          span.etiqueta SELECT, 
+          | según los valores de una columna, usando la cláusula 
+          span.etiqueta GROUP BY. 
+          | Y se usa con funciones de agrupación como lo son, 
+          span.etiqueta AVG, SUM, MAX, COUNT, 
+          | entre otros.
+        p.mb-5  <b>Ejemplo:</b> se desea saber cuántas llamadas entrantes se realizaron durante cada uno de los meses del año 2017. Las llamadas entrantes son aquellas que no provienen de una extensión local, es decir, el origen tiene más de tres dígitos.
+
+    .row.justify-content-center.mb-5
+      .col-lg-6
+        .tarjeta--gris.p-4
+          pre
+            code SELECT MONTH(registro) AS mes, COUNT(*) AS cantidad<br>FROM cdr<br>WHERE LENGTH(origen) &gt; 3 AND YEAR(registro) = 2017<br>GROUP BY mes
+      .col-lg-5
+        figure
+          img.shadow-box(src='@/assets/curso/t4-i24.jpg' alt='captura de pantalla lineas de código') 
+    p.mb-5  Pero si se desea mostrar también la agrupación de los años 2017, 2018 y 2019 y los meses de cada uno de estos años la sería:
+    .row.justify-content-center.mb-5
+      .col-lg-8
+        .tarjeta--gris.p-4
+          pre
+            code SELECT YEAR(registro) AS año,  MONTH(registro) AS mes, COUNT(*) AS cantidad<br>FROM cdr<br>WHERE LENGTH(origen) &gt; 3 AND YEAR(registro) IN (2017,2018,2019)<br>GROUP BY año, mes<br>ORDER BY año, mes
+    p.mb-5  Es de resaltar que para agregar más de una opción en el año, se usó la cláusula IN y se ordena por año y como segundo criterio por mes.
+    .row.justify-content-center.mb-5  
+      .col-lg-6
+        figure
+          img.shadow-box(src='@/assets/curso/t4-i25.jpg' alt='captura de pantalla lineas de código')     
+
+
+
+
+
+
+
+
+
+
+
 
 
 </template>

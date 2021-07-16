@@ -7,14 +7,14 @@
         span  2
       h1 SQL para la creación y eliminación de bases de datos - DDL
     .row.mb-5
-      .col-lg-7
+      .col-lg-7.slideInUp
         p.mb-3  Cada grupo de entidades que tienen un modelo completo, forma una base de datos. Desde la perspectiva de SQL, una base de datos es únicamente un conjunto de relaciones (o tablas) y para organizarlas o diferenciarlas se accede a ellas por su nombre. A nivel de sistema operativo, cada base de datos se almacena en un directorio distinto por MySQL.
         p.mb-4  Por esto, crear una base de datos es un trabajo muy sencillo. Claro que, a la hora de crearla, la base de datos estará desocupada, es decir, no almacenará ninguna tabla.
         .cajon.color-acento-botones.p-4
           p.mb-3  <b>NOTA:</b> Es fundamental que mientras se estudia se ejecuten las sentencias propuestas aquí de esa manera se consolidarán los conocimientos de cada tema tratado.
           p.mb-3  Se debe tomar el tiempo necesario para escribir en la consola cada una de las sentencias, es un ejercicio fundamental para asimilar el conocimiento que se está adquiriendo.
           p.mb-3  De la misma forma se deben revisar los resultados que le da la ejecución, en caso de algún error en la sintaxis, la respuesta dará una idea de qué puede estar fallando.
-      .col-lg-5
+      .col-lg-5.slideInRight
         figure
           img(src='@/assets/curso/t2-i1.svg' alt='imagen decorativa relacionada a persona sentada frente al computador')
     p.mb-3  Se va a <b>crear y manejar</b> una base de datos de práctica, a la vez que se familiarice con la manera de <b>trabajar de MySQL.</b>
