@@ -150,13 +150,13 @@ export default {
           {
             icono: 'far fa-file-alt',
             numero: '5.1',
-            titulo: '',
+            titulo: 'Combinación interna (INNER JOIN)',
             hash: 't_5_1',
           },
           {
             icono: 'far fa-file-alt',
             numero: '5.2',
-            titulo: '',
+            titulo: 'Combinación externa',
             hash: 't_5_2',
           },
         ],

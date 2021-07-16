@@ -8,10 +8,10 @@
       h1 SQL para consulta de datos - DML
     .row.mb-5
       .col-lg-3
-        figure
+        figure(data-aos="fade-left", data-aos-delay='0')
           img(src='@/assets/curso/t4-i1.svg' alt='imagen decorativa') 
       .col-lg-9
-        p.mb-3  Para encontrar la información dentro de una base de datos, es preciso escudriñar dentro de la estructura de los datos su estructura y su naturaleza, por ejemplo, el tipo de datos fecha tiene una estructura YYYY-MM-DD,  y si necesito listar los registros de un año determinado, se necesita una función que refiera a ese dato particular dentro de la columna; por este motivo se necesita revisar algunas funciones antes de empezar a trabajar consultas de datos.
+        p.mb-3(data-aos="fade-right", data-aos-delay='50')  Para encontrar la información dentro de una base de datos, es preciso escudriñar dentro de la estructura de los datos su estructura y su naturaleza, por ejemplo, el tipo de datos fecha tiene una estructura YYYY-MM-DD,  y si necesito listar los registros de un año determinado, se necesita una función que refiera a ese dato particular dentro de la columna; por este motivo se necesita revisar algunas funciones antes de empezar a trabajar consultas de datos.
     #t_4_1.titulo-segundo
       h2 4.1  Funciones en MySQL
     .row.mb-5
@@ -22,19 +22,23 @@
           .anexo__icono
             img(src="@/assets/template/icono-link.svg")
           .anexo__texto
-            p <b>Enlace web.</b> Anexo. www.w3schools.com - MySQL Functions
+            p <b>Enlace web.</b> www.w3schools.com - MySQL Functions
 
       .col-lg-4
-        figure
+        figure(data-aos="fade-up", data-aos-delay='0')
           img(src='@/assets/curso/t4-i2.svg' alt='imagen decorativa') 
 
-      //-- Aqui viene la tabla
+    p.mb-5  Se listarán las que se usarán en adelante para el ejemplo que sigue:
+    .row.justify-content-center.mb-5
+      .col-lg-10
+        figure(data-aos="fade-up", data-aos-delay='0')
+          img(src='@/assets/curso/t4-t1.svg' alt='tabla')
 
 
     p.mb-5 Para este ejemplo se usará una base de datos de llamadas telefónicas, esta base de datos tiene la estructura que se verá a continuación y con ella se aprenderá a hacer consultas.
     .row.mb-5.justify-content-center
       .col-lg-10 
-        .cajon.color-secundario.p-4.mb-5
+        .cajon.color-acento-botones.p-4.mb-5
           .h4.mb-4 Ejemplo llamadas telefónicas:
           .row
             .col-lg-2
@@ -66,7 +70,10 @@
                     span Descargar
                     i.fas.fa-file-download
     p.mb-5  Conozca los datos de prueba con los que se trabajará.
-    //-- Aqui viene la tabla
+    .row.justify-content-center.mb-5
+      .col-lg-10
+        figure(data-aos="fade-up", data-aos-delay='0')
+          img(src='@/assets/curso/t4-t2.svg' alt='tabla')
 
     p.mb-5  A partir de este punto usaremos MySQL WorkBeach para visualizar mejor los resultados.
 

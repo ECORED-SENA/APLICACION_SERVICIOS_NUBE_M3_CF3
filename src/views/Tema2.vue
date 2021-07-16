@@ -34,7 +34,7 @@
               .col-lg-6
                 .p-3
                   figure
-                    img(src='@/assets/curso/t2-c2.svg' alt='ejemplo de linea de comandos CREATE DATABASE')
+                    img.nW(src='@/assets/curso/t2-c2.svg' alt='ejemplo de linea de comandos CREATE DATABASE')
       .tarjeta.color-acento-botones--borde.p-5(titulo="PASO 2")
         .row
           .col-lg-12
@@ -45,7 +45,7 @@
               .col-lg-6
                 .p-3
                   figure
-                    img(src='@/assets/curso/t2-c1.svg' alt='ejemplo de linea de comandos')
+                    img.nW(src='@/assets/curso/t2-c1.svg' alt='ejemplo de linea de comandos')
       .tarjeta.color-acento-botones--borde.p-5(titulo="PASO 3")
         .row
           .col-lg-12
@@ -57,7 +57,7 @@
               .col-lg-6
                 .p-3
                   figure
-                    img(src='@/assets/curso/t2-c2.svg' alt='ejemplo de linea de comandos USE')
+                    img.nW(src='@/assets/curso/t2-c2.svg' alt='ejemplo de linea de comandos USE')
       .tarjeta.color-acento-botones--borde.p-5(titulo="PASO 4")
         .row
           .col-lg-12
@@ -69,7 +69,7 @@
               .col-lg-6
                 .p-3
                   figure
-                    img(src='@/assets/curso/t2-c3.svg' alt='ejemplo de linea de comandos SQL DROP')
+                    img.nW(src='@/assets/curso/t2-c3.svg' alt='ejemplo de linea de comandos SQL DROP')
       .tarjeta.color-acento-botones--borde.p-5(titulo="PASO 5")
         .row
           .col-lg-12
@@ -79,7 +79,7 @@
               .col-lg-6
                 .p-3
                   figure
-                    img(src='@/assets/curso/t2-c4.svg' alt='ejemplo de linea de comandos para listar las bases de datos')
+                    img.nW(src='@/assets/curso/t2-c4.svg' alt='ejemplo de linea de comandos para listar las bases de datos')
 
     
     #t_2_1.titulo-segundo
@@ -95,7 +95,7 @@
           | hará una tabla con todas las columnas que le sean indicadas. A continuación un ejemplo, una tabla que admitirá almacenar el nombre de varias personas y las fechas de nacimiento de cada una. Se debe de indicar el nombre de la tabla, y los nombres de las columnas y tipos el tipo de datos de cada una de ella:
 
       .col-lg-3
-        figure
+        figure(data-aos="fade-up", data-aos-delay='0')
           img(src='@/assets/curso/t2-i2.svg' alt='imagen decorativa')
     p.mb-5  Se ha creará una tabla con el nombre de 
       span.etiqueta "gente" 

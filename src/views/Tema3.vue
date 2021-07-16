@@ -141,7 +141,7 @@
           figure
             img.nW(src='@/assets/curso/t3-c14.svg' alt='ejemplo de tabla') 
         figcaption  Nota: MySQL 8.0 Reference Manual, 2021
-    .cajon.color-acento-contenido.p-4.mb-5
+    .cajon.color-acento-botones.p-4.mb-5
       .h5 Vaciar una tabla
       p Cuando se deseen borrar todas las filas de una tabla, se puede utilizar una sentencia DELETE sin condiciones, como se vio en el punto anterior. Pero existe una sentencia alternativa, TRUNCATE, que hace la misma tarea de una forma mucho más veloz. La diferencia es que DELETE hace un borrado secuencial de la tabla, fila por fila y  TRUNCATE elimina la tabla y la vuelve a crear desocupada, lo que es mucho más eficaz.
     .row.justify-content-center.mb-5
