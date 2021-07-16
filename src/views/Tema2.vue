@@ -478,7 +478,7 @@
       span.etiqueta personas2.
     .row.justify-content-center.mb-5
       .col-lg-5
-        .boxTable
+        .boxTable.h-100
           .row.g-0
             .col-lg-12.light-yellow.d-flex.align-items-center
               .content-box.text-center.min-p
