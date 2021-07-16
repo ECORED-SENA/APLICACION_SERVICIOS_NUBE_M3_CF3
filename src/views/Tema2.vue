@@ -95,7 +95,7 @@
           | hará una tabla con todas las columnas que le sean indicadas. A continuación un ejemplo, una tabla que admitirá almacenar el nombre de varias personas y las fechas de nacimiento de cada una. Se debe de indicar el nombre de la tabla, y los nombres de las columnas y tipos el tipo de datos de cada una de ella:
 
       .col-lg-3
-        figure(data-aos="fade-up", data-aos-delay='0')
+        figure(data-aos="fade-up", data-aos-delay='50')
           img(src='@/assets/curso/t2-i2.svg' alt='imagen decorativa')
     p.mb-5  Se ha creará una tabla con el nombre de 
       span.etiqueta "gente" 
@@ -392,7 +392,7 @@
     p.mb-5  InnoDB es el motor de almacenamiento por defecto de las últimas versiones de MySQL, no obstante, esto no imposibilita usarlas en otros tipos de tablas.
     .row.justify-content-center.mb-5
       .col-lg-6
-        figure
+        figure(data-aos="fade-up", data-aos-delay='50')
           img(src='@/assets/curso/t2-i3.png' alt='ejemplo de innoBD')   
     p.mb-5  Primero se crea la tabla persona:
     .row.justify-content-center.mb-5
@@ -618,21 +618,23 @@
       | La sintaxis asimismo es muy sencilla, a continuación, se creará una base de datos, se creará una tabla y se borrará la base de datos.
     .row.justify-content-center.mb-5
       .col-lg-8
-        .tarjeta--gris.p-4.h-100
+        .tarjeta--gris.p-4
           figure
-            img(src='@/assets/curso/t2-c31.svg' alt='ejemplo de tabla') 
-          figcaption  Nota: MySQL 8.0 Reference Manual (2021).
-    .row.tarjeta-azul.py-5
-      .col-lg-5
-        figure
-          img.h315(src='@/assets/curso/t2-i4.svg' alt='imagen decorativa relacionado a usuario y lineas de codigo') 
-      .col-lg-7
-        .titulo-segundo
-          .h2 Ejercicios prácticos
-        p.mb-5  Se propone que se revise y estudie dos ejercicios de repaso, que están en el documento adjunto “Ejercicios Prácticos”, en ellos  están completamente desarrollados dos ejercicios un poco más extensos, pero que recogen la temática hasta ahora vista, con la diferencia que los ejercicios propuestos <b>son más próximos a problemas de la vida real.</b>
-        a.boton.color-acento-botones.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
-          span Descargar
-          i.fas.fa-file-download
+            img.nW(src='@/assets/curso/t2-c31.svg' alt='ejemplo de tabla') 
+        figcaption  Nota: MySQL 8.0 Reference Manual (2021).
+   
+    .tarjeta-azul
+      .row.py-5.my-5
+        .col-lg-5
+          figure
+            img.h315(src='@/assets/curso/t2-i4.svg' alt='imagen decorativa relacionado a usuario y lineas de codigo') 
+        .col-lg-7
+          .titulo-segundo
+            .h2 Ejercicios prácticos
+          p.mb-5  Se propone que se revise y estudie dos ejercicios de repaso, que están en el documento adjunto “Ejercicios Prácticos”, en ellos  están completamente desarrollados dos ejercicios un poco más extensos, pero que recogen la temática hasta ahora vista, con la diferencia que los ejercicios propuestos <b>son más próximos a problemas de la vida real.</b>
+          a.boton.color-acento-botones.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+            span Descargar
+            i.fas.fa-file-download
 
 
   

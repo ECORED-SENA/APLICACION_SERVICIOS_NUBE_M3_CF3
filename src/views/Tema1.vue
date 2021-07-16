@@ -71,10 +71,8 @@
     .row.mb-5.justify-content-center
       .col-lg-8
         .tarjeta--gris.p-4
-          code
-            | mysql
-            span > 
-            | QUIT <br> Bye<br> C:\mysql\bin> <br>
+          code  mysql&gt; SELECT VERSION (), CURRENT_DATE;<br>+-----------+--------------+<br>| VERSION () | CURRENT_DATE |<br>+-----------+--------------+<br>| 8.0.25    | 2021-06-12   |<br>+-----------+--------------+<br>1 row in set (0.02 sec)<br>mysql&gt;
+          
 
     .row.mb-5
       .col-lg-7
