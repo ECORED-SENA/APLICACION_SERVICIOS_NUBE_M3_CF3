@@ -632,7 +632,7 @@
           .titulo-segundo
             .h2 Ejercicios prácticos
           p.mb-5  Se propone que se revise y estudie dos ejercicios de repaso, que están en el documento adjunto “Ejercicios Prácticos”, en ellos  están completamente desarrollados dos ejercicios un poco más extensos, pero que recogen la temática hasta ahora vista, con la diferencia que los ejercicios propuestos <b>son más próximos a problemas de la vida real.</b>
-          a.boton.color-acento-botones.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          a.boton.color-acento-botones.me-3(:href="obtenerLink('/downloads/CF3_2.5_Ejercicios_Practicos.docx')" target="_blank")
             span Descargar
             i.fas.fa-file-download
 

@@ -7,7 +7,7 @@
         span  5
       h1 Consulta multitablas - DML
     .row.justify-content-center.mb-5
-      .col-lg-10
+      .col-lg-10.slideInUp
         .bloque-texto-a.color-secundario.p-4.p-md-5 
           .row.m-0.align-items-center.justify-content-between
             .col-lg-7
@@ -44,12 +44,12 @@
     p.mb-5  Los datos quedan así:
     .row.justify-content-center.mb-5
       .col-lg-5
-        .tabla-b__header  Empleados
+        .tabla-b__header.text-bold  Empleados
         .tarjeta--gris.p-4
           figure
             img.nW(src="@/assets/curso/t5-c5.svg", alt="Ejemplo de tabla") 
       .col-lg-5
-        .tabla-b__header  Áreas
+        .tabla-b__header.text-bold  Áreas
         .tarjeta--gris.p-4
           figure
             img.nW.mb-5(src="@/assets/curso/t5-c6.svg", alt="Ejemplo de tabla") 
@@ -59,7 +59,7 @@
       h2 5.1  Combinación interna (INNER JOIN)
     .row.mb-4
       .col-lg-3
-        figure
+        figure(data-aos="fade-left", data-aos-delay='100')
           img(src='@/assets/curso/t5-i2.svg' alt='imagen decorativa') 
       .col-lg-9
         p.mb-5  Con esta operación, cada fila en la tabla empleados es combinada (o unida) con los correspondientes de la tabla areas que satisface la condición que se especifiquen en el predicado del JOIN. Cualquier fila de la tabla empleados o de la tabla areas que no tenga uno correspondiente en la otra tabla (areas) es excluido y solo aparecerán los que tengan correspondencia en la otra tabla. Este es el tipo de JOIN más utilizado, por lo que es considerado el tipo de combinación predeterminado. 
@@ -174,4 +174,5 @@ export default {
 
 <style lang="sass" scoped>
 .h200{max-height: 200px}
+.tabla-b__header{background-color: #FFCA28}
 </style>

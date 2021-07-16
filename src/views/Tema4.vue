@@ -43,7 +43,7 @@
           .row
             .col-lg-2
               figure
-                img(src='@/assets/curso/t4-i3.svg' alt='imagen decorativa') 
+                img.h90(src='@/assets/curso/t4-i3.svg' alt='imagen decorativa') 
             .col-lg-10
               ol.lista-ol--cuadro
                 li 
@@ -55,18 +55,18 @@
                     span 2
                   | Importe el archivo con la sentencia source 
                   span.etiqueta &lt;ruta del archivo sql&gt;.
-              pre.p-4.color--gris
+              pre.p-4.tarjeta--gris
                 code  MariaDB [prueba]&gt; source D:/Peter/Downloads/cdr.sql;
         .tarjeta.color-primario.p-3.mb-5
           .row.justify-content-around.align-items-center
             .col-3.col-sm-2.col-lg-1
-              img(src="@/assets/componentes/ej-02.svg")
+              img(src="@/assets/curso/t4-x2.svg")
             .col
               .row.justify-content-between.align-items-center
                 .col.mb-3.mb-sm-0
                   h3.mb-1 Descargue aquí el archivo para crear la base de datos cdr. 
                 .col-sm-auto
-                  a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+                  a.boton.color-acento-contenido(:href="obtenerLink('/downloads/CF3_4.1_cdr_sql.zip')" target="_blank")
                     span Descargar
                     i.fas.fa-file-download
     p.mb-5  Conozca los datos de prueba con los que se trabajará.
@@ -580,4 +580,6 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped></style>
+<style lang="sass" scoped>
+.h90{max-height: 90px}
+</style>
