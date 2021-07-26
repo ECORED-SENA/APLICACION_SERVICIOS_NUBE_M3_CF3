@@ -18,7 +18,7 @@
       .col-lg-8
         p.mb-4  Considerando que MySQL es rico en lo que respecta a operadores y en lo que se refiere a funciones es también muy amplio, MySQL dispone de multitud de funciones. Sólo se explicarán algunas funciones necesarias para entender cómo funcionan en general.
         p.mb-4  Una lista completa de Funciones en MySQL, se puede encontrar en la siguiente referencia:
-        a.anexo.mb-4.mb-lg-0(href="#!" target="_blank")
+        a.anexo.mb-4.mb-lg-0(href="https://www.w3schools.com/mysql/mysql_ref_functions.asp" target="_blank")
           .anexo__icono
             img(src="@/assets/template/icono-link.svg")
           .anexo__texto
@@ -136,7 +136,7 @@
       .col-lg-8
         .tarjeta--gris.p-4
           figure
-            img.nW(src='@/assets/curso/t4-c1.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t4-c1.png' alt='ejemplo de tabla') 
         figcaption  MySQL 8.0 Reference Manual (2021).
 
     p.mb-5 Para listar todos los elementos de la tabla se debe usar la sentencia:
@@ -146,8 +146,8 @@
           .row
             .col-lg-8
               .tarjeta--gris.p-4.mb-5
-                pre
-                  code  SELECT * FROM cdr
+                figure
+                  img.nW(src='@/assets/curso/t4-p1.png' alt='ejemplo de tabla') 
               p.mb-5  Escriba la sentencia anterior. Al decir *  estamos diciendo que seleccione todas las columnas de la tabla cdr:
             .col-lg-4
               figure
@@ -158,8 +158,8 @@
             .col-lg-8
               .tarjeta--gris.p-4.mb-5
                 p.mb-5  También se pueden seleccionar solo algunas, para esto, se deben separar por una coma así:
-                pre
-                  code  SELECT origen, destino, duracion FROM cdr
+                figure
+                  img.nW(src='@/assets/curso/t4-p2.png' alt='ejemplo de tabla') 
               
             .col-lg-4
               figure
@@ -176,7 +176,7 @@
             code  SELECT origen AS num_orig, destino, duracion AS tiempo_llamada FROM cdr
         figure
           img(src='@/assets/curso/t4-i10.jpg' alt='captura de pantalla indicando donde hacer clic') 
-    p.mb-5  Para lisSuponga que se necesita saber cuánto cobrar por las llamadas salientes realizadas a celular o larga distancia nacional (que el destino tenga 10 dígitos), sabiendo que el valor del minuto son $85 (ochenta y cinco pesos):
+    p.mb-5  Suponga que se necesita saber cuánto cobrar por las llamadas salientes realizadas a celular o larga distancia nacional (que el destino tenga 10 dígitos), sabiendo que el valor del minuto son $85 (ochenta y cinco pesos):
     p.mb-5  Lo primero que se necesita tener en cuenta, es que hay que filtrar las llamadas que tienen un destino de 10 dígitos. Esto se logra con la función 
       span.etiqueta LENGTH 
       | y el número de segundos que tiene la llamada desde que es atendida, se guarda en la columna 
