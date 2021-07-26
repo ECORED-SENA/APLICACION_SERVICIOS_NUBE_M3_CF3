@@ -5,7 +5,7 @@
     .titulo-principal
       .titulo-principal__numero
         span  3
-      h1 Interface de Línea de Comandos de MySQL
+      h1 SQL Para la manipulación de datos - DML
 
     .clearfix
     br
@@ -13,8 +13,9 @@
       .col-lg-10.slideInUp
         .tarjeta-avatar-b.mb-4.custom-card
           .tarjeta.light-yellow.shadow-box
-            .p-4
-              p En el mercado, existen diversas herramientas de software creadas para facilitar el proceso de virtualización de servidores. En la Tabla 1, se presentan algunas de ellas usadas para entornos domésticos y pequeñas empresas. <b>Además, se comparten algunas de sus características y sitios web para ampliar la información sobre las mismas y realizar las descargas de varias de ellas.</b>
+            .p-5
+              p.mb-3 Una base de datos sin datos no es muy útil, de manera que <b>se verá cómo añadir, modificar o eliminar los datos que poseen las bases de datos.</b>
+
           img(src='@/assets/curso/t3-i1.svg' alt='imagen decorativa')
 
 
@@ -23,7 +24,7 @@
       .col-lg-8
         .tarjeta--gris.p-4
           figure
-            img.h180(src='@/assets/curso/t3-c1.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t3-c1.png' alt='ejemplo de tabla') 
 
     Separador
     br
@@ -36,7 +37,7 @@
       .col-lg-10
         .tarjeta--gris.p-4
           figure
-            img.h600(src='@/assets/curso/t3-c2.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t3-c2.png' alt='ejemplo de tabla') 
 
     p.mb-5  Si no se requiere determinar un valor preciso para alguna columna, se puede determinar el valor por defecto indicado para esa columna cuando la tabla fue creada, usando la palabra
       span.etiqueta DEFAULT:
@@ -44,20 +45,20 @@
       .col-lg-10
         .tarjeta--gris.p-4
           figure
-            img(src='@/assets/curso/t3-c3.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t3-c3.png' alt='ejemplo de tabla') 
     
     p.mb-5  Mire como Perillo tiene el valor por defecto definido en la columna fecha y edad.
     .row.justify-content-center.mb-5
       .col-lg-10
         .tarjeta--gris.p-4.text-left
           figure
-            img.h300.nW(src='@/assets/curso/t3-c4.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t3-c4.png' alt='ejemplo de tabla') 
 
     p.mb-5  El orden en la sentencia INSERT es muy importante, conserve una correspondencia como se muestra en la siguiente imagen.
     .row.justify-content-center.mb-5
-      .col-lg-10
+      .col-lg-11
         figure
-          img.nW(src='@/assets/curso/t3-c5.svg' alt='ejemplo de tabla') 
+          img.nW(src='@/assets/curso/t3-c5.png' alt='ejemplo de tabla') 
 
     p.mb-5  Finalmente, estamos listos para aprender cómo se actualizan los datos que se han registrado.
 
@@ -75,7 +76,7 @@
       .col-lg-8
         .tarjeta--gris.p-4
           figure
-            img.nW(src='@/assets/curso/t3-c6.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t3-c6.png' alt='ejemplo de tabla') 
         figcaption  Nota: MySQL 8.0 Reference Manual, 2021
     p.mb-5  Que todas las personas de la tabla gente tengan la misma fecha utilizando esta sentencia 
       span.etiqueta UPDATE
@@ -83,13 +84,13 @@
       .col-lg-10
         .tarjeta--gris.p-4
           figure
-            img.nW(src='@/assets/curso/t3-c7.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t3-c7.png' alt='ejemplo de tabla') 
     p.mb-5  Al suponer que se necesita ponerle el incrementar la edad por 10 años a cada fila de la tabla gente:
     .row.justify-content-center.mb-5
       .col-lg-10
         .tarjeta--gris.p-4
           figure
-            img.nW(src='@/assets/curso/t3-c8.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t3-c8.png' alt='ejemplo de tabla') 
 
     p.mb-5  Sin embargo no se tienen que actualizar todas filas de la tabla, ya que se tiene la posibilidad de definir cuales filas se desean actualizar.
     p.mb-5  La primera es por medio de la cláusula 
@@ -99,14 +100,14 @@
       .col-lg-10
         .tarjeta--gris.p-4
           figure
-            img.nW(src='@/assets/curso/t3-c9.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t3-c9.png' alt='ejemplo de tabla') 
             
     p.mb-5  Otro ejemplo sería que se actualice la fecha al día 2012-12-12 para todos lo que sean mayores de 40 años de edad, esto se podría hacer así: 
     .row.justify-content-center.mb-5
       .col-lg-10
         .tarjeta--gris.p-4
           figure
-            img.nW(src='@/assets/curso/t3-c10.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t3-c10.png' alt='ejemplo de tabla') 
 
 
 
@@ -123,14 +124,14 @@
       .col-lg-8
         .tarjeta--gris.p-4
           figure
-            img.nW(src='@/assets/curso/t3-c11.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t3-c11.png' alt='ejemplo de tabla') 
 
     p.mb-5  Para borrar el registro que tiene por nombre Perillo se procede de la siguiente forma.
     .row.justify-content-center.mb-5
       .col-lg-10
         .tarjeta--gris.p-4
           figure
-            img.nW(src='@/assets/curso/t3-c13.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t3-c13.png' alt='ejemplo de tabla') 
 
     p.mb-5  A continuación, se debe borrar aquello que tenga edad comprendida entre 30 (incluyendo 30) y 50 años (incluyendo 50), para eso se usa un operador llamado 
       span.etiqueta AND, 
@@ -139,7 +140,7 @@
       .col-lg-10
         .tarjeta--gris.p-4
           figure
-            img.nW(src='@/assets/curso/t3-c14.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t3-c14.png' alt='ejemplo de tabla') 
         figcaption  Nota: MySQL 8.0 Reference Manual, 2021
     .cajon.color-acento-botones.p-4.mb-5
       .h5 Vaciar una tabla
@@ -148,7 +149,7 @@
       .col-lg-8
         .tarjeta--gris.p-4
           figure
-            img.nW(src='@/assets/curso/t3-c15.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t3-c15.png' alt='ejemplo de tabla') 
 
 
 

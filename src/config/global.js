@@ -78,7 +78,7 @@ export default {
         nombreRuta: 'tema3',
         icono: 'far fa-file-alt',
         numero: '3',
-        titulo: 'Interface de Línea de Comandos de MySQL',
+        titulo: 'SQL Para la manipulación de datos - DML',
         desarrolloContenidos: true,
         subMenu: [
           {

@@ -563,7 +563,7 @@
             span.etiqueta personas3
         .tarjeta--gris.p-4.h-100
           figure
-            img(src='@/assets/curso/t2-c27.png' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t2-c27.png' alt='ejemplo de tabla') 
       .col-lg-5
         figcaption.customCaption.mb-2  Datos de la tabla 
             span.etiqueta telefonos3
