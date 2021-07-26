@@ -429,7 +429,7 @@
       .col-lg-8
         .tarjeta--gris.p-4
           figure
-            img.nW(src='@/assets/curso/t4-m6.png' alt='ejemplo de tabla')
+            img.nW(src='@/assets/curso/t4-m1.png' alt='ejemplo de tabla')
     .row.justify-content-center.mb-5
       .col-lg-6
         figure
@@ -454,8 +454,8 @@
     .row.justify-content-center.mb-5
       .col-lg-5
         .tarjeta--gris.p-4
-          pre
-            code SELECT *, CEIL(facturar/60) * 85 AS valor<br>FROM cdr<br>WHERE YEAR(registro) = 2016<br>AND LENGTH(destino) = 10<br>AND CEIL(facturar/60) * 85 &gt; 200<br>ORDER BY valor DESC
+          figure
+            img.nW(src='@/assets/curso/t4-m7.png' alt='captura de pantalla lineas de código')
       .col-lg-5
         figure
           img.shadow-box(src='@/assets/curso/t4-i18.jpg' alt='captura de pantalla lineas de código') 
@@ -471,8 +471,8 @@
     .row.justify-content-center.mb-5
       .col-lg-5
         .tarjeta--gris.p-4
-          pre
-            code SELECT COUNT(*)<br>FROM cdr<br>WHERE YEAR(registro) = 2016<br>AND LENGTH(destino) = 10<br>AND CEIL(facturar/60) * 85 &gt; 200
+          figure
+            img.nW(src='@/assets/curso/t4-m8.png' alt='captura de pantalla lineas de código')
       .col-lg-5
         figure
           img.shadow-box(src='@/assets/curso/t4-i19.jpg' alt='captura de pantalla lineas de código') 
@@ -482,8 +482,8 @@
     .row.justify-content-center.mb-5
       .col-lg-5
         .tarjeta--gris.p-4
-          pre
-            code SELECT COUNT(*)<br>FROM cdr<br>WHERE YEAR(registro) = 2016<br>AND LENGTH(destino) = 10<br>AND CEIL(facturar/60) * 85 &gt; 200
+          figure
+            img.nW(src='@/assets/curso/t4-m9.png' alt='captura de pantalla lineas de código')           
       .col-lg-5
         figure
           img.shadow-box(src='@/assets/curso/t4-i20.jpg' alt='captura de pantalla lineas de código') 
@@ -494,8 +494,8 @@
     .row.justify-content-center.mb-5
       .col-lg-5
         .tarjeta--gris.p-4
-          pre
-            code SELECT *, CEIL(facturar/60) * 85 AS valor <br>FROM cdr<br>WHERE YEAR(registro) = 2016<br>AND LENGTH(destino) = 10<br>AND CEIL(facturar/60) * 85 &gt; 200<br>ORDER BY valor DESC<br>LIMIT 10, 10
+          figure
+            img.nW(src='@/assets/curso/t4-m10.png' alt='captura de pantalla lineas de código')          
       .col-lg-5
         figure
           img.shadow-box(src='@/assets/curso/t4-i21.jpg' alt='captura de pantalla lineas de código') 
@@ -504,8 +504,8 @@
     .row.justify-content-center.mb-5
       .col-lg-5
         .tarjeta--gris.p-4
-          pre
-            code SELECT *, CEIL(facturar/60) * 85 AS valor<br>FROM cdr<br>WHERE YEAR(registro) = 2016<br>AND LENGTH(destino) = 10<br>AND CEIL(facturar/60) * 85 &gt; 200<br>ORDER BY valor DESC<br>LIMIT 20, 10
+          figure
+            img.nW(src='@/assets/curso/t4-m11.png' alt='captura de pantalla lineas de código')       
       .col-lg-5
         figure
           img.shadow-box(src='@/assets/curso/t4-i22.jpg' alt='captura de pantalla lineas de código') 
@@ -534,8 +534,8 @@
     .row.justify-content-center.mb-5
       .col-lg-6
         .tarjeta--gris.p-4
-          pre
-            code SELECT MONTH(registro) AS mes, COUNT(*) AS cantidad<br>FROM cdr<br>WHERE LENGTH(origen) &gt; 3 AND YEAR(registro) = 2017<br>GROUP BY mes
+          figure
+            img.nW(src='@/assets/curso/t4-b2.png' alt='captura de pantalla lineas de código')
       .col-lg-5
         figure
           img.shadow-box(src='@/assets/curso/t4-i24.jpg' alt='captura de pantalla lineas de código') 
@@ -543,9 +543,11 @@
     .row.justify-content-center.mb-5
       .col-lg-8
         .tarjeta--gris.p-4
-          pre
-            code SELECT YEAR(registro) AS año,  MONTH(registro) AS mes, COUNT(*) AS cantidad<br>FROM cdr<br>WHERE LENGTH(origen) &gt; 3 AND YEAR(registro) IN (2017,2018,2019)<br>GROUP BY año, mes<br>ORDER BY año, mes
-    p.mb-5  Es de resaltar que para agregar más de una opción en el año, se usó la cláusula IN y se ordena por año y como segundo criterio por mes.
+          figure
+            img.nW(src='@/assets/curso/t4-b1.png' alt='captura de pantalla lineas de código')
+    p.mb-5  Es de resaltar que para agregar más de una opción en el año, se usó la cláusula 
+      span.etiqueta IN 
+      | y se ordena por año y como segundo criterio por mes.
     .row.justify-content-center.mb-5  
       .col-lg-6
         figure
