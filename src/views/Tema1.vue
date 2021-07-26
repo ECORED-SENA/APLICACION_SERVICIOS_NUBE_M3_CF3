@@ -50,17 +50,14 @@
     .row.mb-5.justify-content-center
       .col-lg-8
         .tarjeta--gris.p-4
-          code
-            Enter password: *********** <br> Welcome to the MySQL monitor.  Commands end with; or \g.<br>Your MySQL connection id is 90<br>Server version: 8.0.25 MySQL Community Server - GPL<br><br> Copyright (c) 2000, 2021, Oracle and/or its affiliates.<br><br>Oracle is a registered trademark of Oracle Corporation and/or its<br> affiliates. Other names may be trademarks of their respective<br>owners.<br><br>Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.<br><br>mysql>
-            
+          figure.mb-5(data-aos="fade-up", data-aos-delay='0')
+            img.nW(src='@/assets/curso/t1-xx.png', alt='texto complementario')            
     p.mb-5  Para salir de la consola de comando se usa el comando quit (en mayúscula o minúscula)
     .row.mb-5.justify-content-center
       .col-lg-8
         .tarjeta--gris.p-4
-          code
-            | mysql
-            span > 
-            | QUIT <br> Bye<br> C:\mysql\bin> <br>
+          figure.mb-5(data-aos="fade-up", data-aos-delay='0')
+            img.nW(src='@/assets/curso/t1-x0.png', alt='texto complementario')
 
     Separador
     br
@@ -71,9 +68,11 @@
     .row.mb-5.justify-content-center
       .col-lg-8
         .tarjeta--gris.p-4
-          code  mysql&gt; SELECT VERSION (), CURRENT_DATE;<br>+-----------+--------------+<br>| VERSION () | CURRENT_DATE |<br>+-----------+--------------+<br>| 8.0.25    | 2021-06-12   |<br>+-----------+--------------+<br>1 row in set (0.02 sec)<br>mysql&gt;
+          figure.mb-5(data-aos="flip-left", data-aos-delay='0')
+              img.nW(src='@/assets/curso/t1-i0.png', alt='texto complementario')
           
-
+    p.mb-5 SELECT es la sentencia SQL para elegir datos de bases de datos, además se puede utilizar, como en esta situación, para consultar cambiantes del sistema o resultados de funcionalidades. En esta situación se ha consultado el resultado de la función VERSION, se sabe que es una función porque tiene paréntesis” ()”, y de la variable CURRENT_DATE.
+    
     .row.mb-5
       .col-lg-7
         .cajon.color-acento-botones.p-4

@@ -31,10 +31,10 @@
         .row
           .col-lg-12
             .row.tarjeta--gris
-              .col-lg-6
+              .col-lg-8
                 .p-3
                   figure
-                    img.nW(src='@/assets/curso/t2-c2.svg' alt='ejemplo de linea de comandos CREATE DATABASE')
+                    img.nW(src='@/assets/curso/t2-c2.png' alt='ejemplo de linea de comandos CREATE DATABASE')
       .tarjeta.color-acento-botones--borde.p-5(titulo="PASO 2")
         .row
           .col-lg-12
@@ -42,10 +42,10 @@
               span.etiqueta SHOW DATABASES: 
           .col-lg-12
             .row.tarjeta--gris
-              .col-lg-6
+              .col-lg-8
                 .p-3
                   figure
-                    img.nW(src='@/assets/curso/t2-c1.svg' alt='ejemplo de linea de comandos')
+                    img.nW(src='@/assets/curso/t2-c1.png' alt='ejemplo de linea de comandos')
       .tarjeta.color-acento-botones--borde.p-5(titulo="PASO 3")
         .row
           .col-lg-12
@@ -54,10 +54,10 @@
               | que no es puntualmente una sentencia SQL, sino una opción de MySQL: 
           .col-lg-12
             .row.tarjeta--gris
-              .col-lg-6
+              .col-lg-8
                 .p-3
                   figure
-                    img.nW(src='@/assets/curso/t2-c2.svg' alt='ejemplo de linea de comandos USE')
+                    img.nW(src='@/assets/curso/t2-c2.png' alt='ejemplo de linea de comandos USE')
       .tarjeta.color-acento-botones--borde.p-5(titulo="PASO 4")
         .row
           .col-lg-12
@@ -66,20 +66,20 @@
               |  A continuación, se borrará la base de datos prueba, listaremos las existentes y la volveremos a crear.
           .col-lg-12
             .row.tarjeta--gris
-              .col-lg-6
+              .col-lg-8
                 .p-3
                   figure
-                    img.nW(src='@/assets/curso/t2-c3.svg' alt='ejemplo de linea de comandos SQL DROP')
+                    img.nW(src='@/assets/curso/t2-c3.png' alt='ejemplo de linea de comandos SQL DROP')
       .tarjeta.color-acento-botones--borde.p-5(titulo="PASO 5")
         .row
           .col-lg-12
             p.mb-4  Liste las bases de datos para comprobar que ya no existe la base de datos antes creada.
           .col-lg-12
             .row.tarjeta--gris
-              .col-lg-6
+              .col-lg-8
                 .p-3
                   figure
-                    img.nW(src='@/assets/curso/t2-c4.svg' alt='ejemplo de linea de comandos para listar las bases de datos')
+                    img.nW(src='@/assets/curso/t2-c4.png' alt='ejemplo de linea de comandos para listar las bases de datos')
 
     
     #t_2_1.titulo-segundo
@@ -105,15 +105,15 @@
       span.etiqueta "fecha" 
       | de tipo fecha.
     .row.justify-content-center.mb-5
-      .col-lg-6.tarjeta--gris
+      .col-lg-8.tarjeta--gris
         figure
-          img(src='@/assets/curso/t2-c5.svg' alt='ejemplo de tabla')    
+          img.nW(src='@/assets/curso/t2-c5.png' alt='ejemplo de tabla')    
     p.mb-5 Se puede examinar cuántas tablas y qué nombres tienen en una base de datos, empleando la sentencia 
       span.etiqueta SHOW TABLES: 
     .row.justify-content-center.mb-5
-      .col-lg-6.tarjeta--gris
+      .col-lg-8.tarjeta--gris
         figure
-          img.h210(src='@/assets/curso/t2-c6.svg' alt='ejemplo de tabla')    
+          img.nW(src='@/assets/curso/t2-c6.png' alt='ejemplo de tabla')    
     
     
     h3.titulo-tercero
@@ -131,16 +131,16 @@
           span.etiqueta NOT NULL. 
           | Por ejemplo:
         .row.justify-content-center.mb-5
-          .col-lg-8
+          .col-lg-10
             .tarjeta--gris.p-4
               figure
-                img.h210(src='@/assets/curso/t2-c7.svg' alt='ejemplo de tabla')         
+                img.nW(src='@/assets/curso/t2-c7.png' alt='ejemplo de tabla')         
         p.mb-5  Listar las tablas existentes hasta ahora:
         .row.justify-content-center.mb-5
-          .col-lg-8
+          .col-lg-10
             .tarjeta--gris.p-4
               figure
-                img.h210(src='@/assets/curso/t2-c8.svg' alt='ejemplo de tabla')         
+                img.nW(src='@/assets/curso/t2-c8.png' alt='ejemplo de tabla')         
     h3.titulo-tercero
         span.squareLetter B
         | Valores por defecto
@@ -158,10 +158,10 @@
           | Se creará la tabla como:
         p.mb-5  A continuación se debe escribir la sentencia,  pero esta vez se hará por partes.
         .row.justify-content-center.mb-5
-          .col-lg-9
+          .col-lg-10
             .tarjeta--gris.p-4
               figure
-                img.h210(src='@/assets/curso/t2-c9.svg' alt='ejemplo de tabla')  
+                img.h210(src='@/assets/curso/t2-c9.png' alt='ejemplo de tabla')  
         p.mb-5  Como la sentencia es larga se digitará por partes así:
 
         ol.lista-ol--cuadro.lista-ol--separador.mb-5
@@ -184,7 +184,7 @@
           .col-lg-9
             .tarjeta--gris.p-4
               figure
-                img.h210(src='@/assets/curso/t2-c10.svg' alt='ejemplo de tabla')          
+                img.h210(src='@/assets/curso/t2-c10.png' alt='ejemplo de tabla')          
     h3.titulo-tercero
       span.squareLetter C
       | Claves Primarias
@@ -199,10 +199,10 @@
           | como ya se hizo mención. Si esto no se especifica de forma explícita, MySQL lo hará de forma automática.
         p.mb-5 Por ejemplo, si se quiere crear un índice de la tabla de ciudad3 para la columna nombre, se creará la tabla así:
         .row.justify-content-center.mb-5
-          .col-lg-9
+          .col-lg-10
             .tarjeta--gris.p-4
               figure
-                img.h210(src='@/assets/curso/t2-c11.svg' alt='ejemplo de tabla')     
+                img.nW(src='@/assets/curso/t2-c11.png' alt='ejemplo de tabla')     
         p.mb-4  Emplear 
           span.etiqueta NOT NULL PRIMARY KEY, 
           | es lo mismo que 
@@ -224,7 +224,7 @@
           .col-lg-9
             .tarjeta--gris.p-4
               figure
-                img.h210(src='@/assets/curso/t2-c12.svg' alt='ejemplo de tabla')    
+                img.nW(src='@/assets/curso/t2-c12.png' alt='ejemplo de tabla')    
 
     h3.titulo-tercero
       span.squareLetter E
@@ -236,7 +236,7 @@
           .col-lg-9
             .tarjeta--gris.p-4
               figure
-                img.h210(src='@/assets/curso/t2-c12-1.svg' alt='ejemplo de tabla')    
+                img.nW(src='@/assets/curso/t2-c12-1.svg' alt='ejemplo de tabla')    
 
     h3.titulo-tercero
       span.squareLetter F
@@ -249,7 +249,7 @@
           .col-lg-9
             .tarjeta--gris.p-4
               figure
-                img.h210(src='@/assets/curso/t2-c13.svg' alt='ejemplo de tabla')  
+                img.nW(src='@/assets/curso/t2-c13.png' alt='ejemplo de tabla')  
 
     h3.titulo-tercero
       span.squareLetter G
@@ -262,7 +262,7 @@
           .col-lg-9
             .tarjeta--gris.p-4
               figure
-                img.h210(src='@/assets/curso/t2-c14.svg' alt='ejemplo de tabla')
+                img.h210(src='@/assets/curso/t2-c14.png' alt='ejemplo de tabla')
             figcaption  Nota: MySQL 8.0 Reference Manual (2021)  
         p.mb-5  Esta documentación se puede leer de la siguiente forma:
         .row.justify-content-center.mb-5
@@ -297,14 +297,14 @@
               .row.justify-content-center.mb-3
                 .col-lg-12
                   .tarjeta--gris.p-4.mb-5
-                    code  fecha DATE NOT NULL
+                    code.text-bold  fecha DATE NOT NULL
                   p  Si quiero que el valor por defecto de esta columna sea la fecha actual del sistema puedo usar la sintaxis 
                     span.etiqueta DEFAULT CURRENT_DATE 
                     | así: 
               .row.justify-content-center.mb-5
                 .col-lg-12
                   .tarjeta--gris.p-4
-                    code  fecha DATE NOT NULL DEFAULT CURRENT_DATE       
+                    code.text-bold  fecha DATE NOT NULL DEFAULT CURRENT_DATE       
 
     h3.titulo-tercero
       span.squareLetter H
@@ -316,26 +316,27 @@
           .row.justify-content-center
             .col-lg-8
               .tarjeta--gris.p-4
-                code  definición_columnas <br>  | PRIMARY KEY (index_nombre_col,...) 
+                figure
+                  img.nW(src='@/assets/curso/t2-h1.png' alt='ejemplo de tabla')
               figcaption  Nota: MySQL 8.0 Reference Manual (2021)
         p.mb-5 Usando esta sintaxis, en el ejemplo anterior que se dio para crear claves primarias y quedaría de la siguiente forma:   
           .row.justify-content-center.mb-5
             .col-lg-8
               .tarjeta--gris.p-4
                 figure
-                  img(src='@/assets/curso/t2-c15.svg' alt='ejemplo de tabla')
+                  img.nW(src='@/assets/curso/t2-c15.png' alt='ejemplo de tabla')
         p.mb-4 Pero de esta manera, se tiene mayor cantidad de opciones, por ejemplo, entre los paréntesis se puede detallar diversos nombres de columnas, para construir claves primarias acomodadas por diversas columnas:
           .row.justify-content-center.mb-5
             .col-lg-8
               .tarjeta--gris.p-4
                 figure
-                  img(src='@/assets/curso/t2-c16.svg' alt='ejemplo de tabla')
+                  img.nW(src='@/assets/curso/t2-c16.png' alt='ejemplo de tabla')
         p.mb-4 Se puede observar como quedó definida la tabla, se debe prestar especial atención a la columna de salida llamada Key:
           .row.justify-content-center.mb-5
             .col-lg-8
               .tarjeta--gris.p-4
                 figure
-                  img(src='@/assets/curso/t2-c17.svg' alt='ejemplo de tabla')
+                  img.nW(src='@/assets/curso/t2-c17.png' alt='ejemplo de tabla')
     
     h3.titulo-tercero
       span.squareLetter I

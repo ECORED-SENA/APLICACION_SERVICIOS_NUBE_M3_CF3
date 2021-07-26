@@ -95,9 +95,9 @@ export default {
           },
           {
             icono: 'far fa-file-alt',
-            numero: '3.2',
+            numero: '3.3',
             titulo: 'Borrado de registros',
-            hash: 't_3_2',
+            hash: 't_3_3',
           },
         ],
       },
