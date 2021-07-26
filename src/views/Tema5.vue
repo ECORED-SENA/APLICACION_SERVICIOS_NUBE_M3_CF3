@@ -11,7 +11,7 @@
         .bloque-texto-a.color-secundario.p-4.p-md-5 
           .row.m-0.align-items-center.justify-content-between
             .col-lg-7
-              .bloque-texto-a__texto.p-4
+              .bloque-texto-a__texto.p-4.shadow-box
                 p Para explicar este tipo de ejercicios, crearemos una base de datos de empleados llamada ehr, y las tablas empleados y áreas, se relacionan si: un empleado pertenece a un área y un área puede tener varios empleados como se muestre en el siguiente diagrama:
 
             .col-lg-5.mb-4.mb-lg-0
