@@ -172,8 +172,8 @@
     .row.justify-content-center.mb-5
       .col-lg-8
         .tarjeta--gris.p-4.mb-5
-          pre
-            code  SELECT origen AS num_orig, destino, duracion AS tiempo_llamada FROM cdr
+          figure
+            img(src='@/assets/curso/t4-p0.png' alt='captura de pantalla indicando donde hacer clic') 
         figure
           img(src='@/assets/curso/t4-i10.jpg' alt='captura de pantalla indicando donde hacer clic') 
     p.mb-5  Suponga que se necesita saber cuánto cobrar por las llamadas salientes realizadas a celular o larga distancia nacional (que el destino tenga 10 dígitos), sabiendo que el valor del minuto son $85 (ochenta y cinco pesos):
@@ -188,7 +188,7 @@
       .col-lg-5
         .tarjeta--gris.p-4
           figure
-            img.nW(src='@/assets/curso/t4-c2.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t4-p3.png' alt='ejemplo de tabla') 
 
 
       .col-lg-5
@@ -226,7 +226,7 @@
       .col-lg-8
         .tarjeta--gris.p-4
           figure
-            img.nW(src='@/assets/curso/t4-c3.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t4-c3.png' alt='ejemplo de tabla') 
 
     .row.justify-content-center
       .col-lg-10
@@ -282,7 +282,7 @@
                     
             .tarjeta--gris.p-4
               figure
-                img.nW(src='@/assets/curso/t4-c4.svg' alt='ejemplo de tabla') 
+                img.nW(src='@/assets/curso/t4-c4.png' alt='ejemplo de tabla') 
 
 
           .tarjeta.color-acento-botones--borde.p-5(titulo="Operador OR")
@@ -333,7 +333,7 @@
                     td VERDADERO
             .tarjeta--gris.p-4
               figure
-                img.nW(src='@/assets/curso/t4-c4-1.svg' alt='ejemplo de tabla') 
+                img.nW(src='@/assets/curso/t4-c5.png' alt='ejemplo de tabla') 
     h3.titulo-tercero
         span.squareLetter B
         | Operadores de igualdad+
@@ -343,8 +343,8 @@
     .row.justify-content-center.mb-5
       .col-lg-8
         .tarjeta--gris.p-4
-          pre
-            code  SELECT * FROM cdr  WHERE registro = '2018-01-02 10:19:08'
+          figure
+            img.nW(src='@/assets/curso/t4-m1.png' alt='ejemplo de tabla') 
 
     h3.titulo-tercero
         span.squareLetter C
@@ -372,8 +372,8 @@
                 td &gt;=
                 td Mayor o igual                
         .tarjeta--gris.p-4
-          pre
-            code SELECT * FROM cdr <br>WHERE registro &gt;= '2018-01-02 10:19:08' <br>AND registro &lt;= '2018-01-04 10:19:08'
+          figure
+            img.nW(src='@/assets/curso/t4-m2.png' alt='ejemplo de tabla')
 
 
       .col-lg-5
@@ -390,13 +390,15 @@
         figure
           img(src='@/assets/curso/t4-i12-1.svg' alt='ejemplo de tabla') 
       .col-lg-9
-        p.mb-5  También, se puede agregar una cláusula de   para lograr resultados ordenados por la columna que se quiera y se puede hacer ascendente o descendente con la cláusula ASC y DESC respectivamente.
+        p.mb-4  También, se puede agregar una cláusula de orden 
+          span.etiqueta ORDER BY 
+          | para lograr resultados ordenados por la columna que se quiera y se puede hacer ascendente o descendente con la cláusula ASC y DESC respectivamente.
         p.mb-5  Por ejemplo se desea listas las llamadas en orden de duración descendente (de mayor a menor):
     .row.justify-content-center.mb-5
       .col-lg-8
         .tarjeta--gris.p-4
-          pre
-            code SELECT * FROM cdr ORDER BY duracion DESC
+          figure
+            img.nW(src='@/assets/curso/t4-m3.png' alt='ejemplo de tabla')
     .row.justify-content-center.mb-5
       .col-lg-6
         figure
@@ -405,8 +407,8 @@
     .row.justify-content-center.mb-5
       .col-lg-8
         .tarjeta--gris.p-4
-          pre
-            code SELECT * FROM cdr ORDER BY registro ASC
+          figure
+            img.nW(src='@/assets/curso/t4-m4.png' alt='ejemplo de tabla')
     .row.justify-content-center.mb-5
       .col-lg-6
         figure
@@ -415,8 +417,8 @@
     .row.justify-content-center.mb-5
       .col-lg-8
         .tarjeta--gris.p-4
-          pre
-            code SELECT *, CEIL(facturar/60) * 85 AS valor FROM cdr<br>WHERE LENGTH(destino) = 10 <br>ORDER BY  CEIL(facturar/60) * 85  DESC
+          figure
+            img.nW(src='@/assets/curso/t4-m5.png' alt='ejemplo de tabla')
     .row.justify-content-center.mb-5
       .col-lg-6
         figure
@@ -426,8 +428,8 @@
     .row.justify-content-center.mb-5
       .col-lg-8
         .tarjeta--gris.p-4
-          pre
-            code SELECT * FROM cdr<br>ORDER BY  facturar  DESC , registro  ASC
+          figure
+            img.nW(src='@/assets/curso/t4-m6.png' alt='ejemplo de tabla')
     .row.justify-content-center.mb-5
       .col-lg-6
         figure
