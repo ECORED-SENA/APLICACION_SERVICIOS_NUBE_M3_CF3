@@ -23,23 +23,23 @@
       .col-lg-10
         .tarjeta--gris.p-4
           figure.mb-5
-            img.nW(src="@/assets/curso/t5-c1.svg", alt="Ejemplo de tabla")
+            img.nW(src="@/assets/curso/t5-c1.png", alt="Ejemplo de tabla")
     p.mb-5  Se insertarán los siguientes datos:
     .row.justify-content-center.mb-3
       .col-lg-10
         .tarjeta--gris.p-4
-          pre
-            code INSERT INTO areas (id_area, area) VALUES ('17', 'Ventas'), ('19', 'Producción'),<br>  ('20', 'Ingeniería') ('21', 'Mercadeo');
+          figure.mb-5
+            img.nW(src="@/assets/curso/t5-c2.png", alt="Ejemplo de tabla")
     .row.justify-content-center.mb-3
       .col-lg-10
         .tarjeta--gris.p-4
           figure.mb-5
-            img.nW(src="@/assets/curso/t5-c3.svg", alt="Ejemplo de tabla")
+            img.nW(src="@/assets/curso/t5-c3.png", alt="Ejemplo de tabla")
     .row.justify-content-center.mb-5
       .col-lg-10
         .tarjeta--gris.p-4
           figure.mb-5
-            img.nW(src="@/assets/curso/t5-c4.svg", alt="Ejemplo de tabla")            
+            img.nW(src="@/assets/curso/t5-c4.png", alt="Ejemplo de tabla")            
     
     p.mb-5  Los datos quedan así:
     .row.justify-content-center.mb-5
@@ -47,12 +47,12 @@
         .tabla-b__header.text-bold  Empleados
         .tarjeta--gris.p-4
           figure
-            img.nW(src="@/assets/curso/t5-c5.svg", alt="Ejemplo de tabla") 
+            img.nW(src="@/assets/curso/t5-c5.png", alt="Ejemplo de tabla") 
       .col-lg-5
         .tabla-b__header.text-bold  Áreas
         .tarjeta--gris.p-4
           figure
-            img.nW.mb-5(src="@/assets/curso/t5-c6.svg", alt="Ejemplo de tabla") 
+            img.nW.mb-5(src="@/assets/curso/t5-c6.png", alt="Ejemplo de tabla") 
 
 
     #t_5_1.titulo-segundo
@@ -66,8 +66,8 @@
     .row.justify-content-center.mb-5
       .col-lg-6
         .tarjeta--gris.p-4
-          pre
-            code SELECT MONTH(registro) AS mes, COUNT(*) AS cantidad<br>FROM cdr<br>WHERE LENGTH(origen) &gt; 3 AND YEAR(registro) = 2017<br>GROUP BY mes
+          figure
+            img.nW(src="@/assets/curso/t5-c7.png", alt="Ejemplo de tabla")
       .col-lg-5
         figure
           img.shadow-box(src='@/assets/curso/t5-i3.jpg' alt='captura de pantalla lineas de código') 
@@ -113,8 +113,8 @@
     .row.justify-content-center.mb-5
       .col-lg-8
         .tarjeta--gris.p-4
-          pre
-            code SELECT * <br>FROM empleados AS e<br>LEFT JOIN areas as a ON a.id_area = e.area_id
+          figure
+            img.nW(src="@/assets/curso/t5-c8.png", alt="Ejemplo de tabla")
     .row.justify-content-center.mb-5
       .col-lg-8
         p.mb-4  El resultado de este tipo de consulta contiene todos los registros de la tabla de la izquierda (la primera tabla que se define en el FROM en la consulta), independiente de si existe un registro correspondiente en la tabla de la derecha (la que se define en el JOIN).
@@ -128,7 +128,7 @@
     .row.justify-content-center.mb-5
       .col-lg-5
         figure
-          img(src='@/assets/curso/t5-i7.svg' alt='infografia de joins del SQL') 
+          img.nW(src='@/assets/curso/t5-i7.svg' alt='infografia de joins del SQL') 
       .col-lg-5
         figure
           img.shadow-box(src='@/assets/curso/t5-i10.jpg' alt='infografia de joins del SQL')     
@@ -140,13 +140,13 @@
     .row.justify-content-center.mb-5
       .col-lg-8
         .tarjeta--gris.p-4
-          pre
-            code SELECT *<br>FROM empleados AS e<br>RIGHT JOIN areas as a ON a.id_area = e.area_id
+          figure
+            img.nW(src="@/assets/curso/t5-c9.png", alt="Ejemplo de tabla")
     p.mb-5  En el diagrama las áreas que no tienen empleados están en el área verde mientras que las áreas con empleados están en el área anaranjada, en la intersección de empleados y áreas.
     .row.justify-content-center.mb-5
       .col-lg-5
         figure
-          img(src='@/assets/curso/t5-i8.svg' alt='infografia de joins del SQL') 
+          img.nW(src='@/assets/curso/t5-i8.svg' alt='infografia de joins del SQL') 
       .col-lg-5
         figure
           img.shadow-box(src='@/assets/curso/t5-11.jpg' alt='infografia de joins del SQL')     
