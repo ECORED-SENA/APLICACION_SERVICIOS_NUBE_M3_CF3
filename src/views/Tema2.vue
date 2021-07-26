@@ -358,13 +358,13 @@
           .col-lg-8
             .tarjeta--gris.p-4
               figure
-                img(src='@/assets/curso/t2-c18.svg' alt='ejemplo de tabla')      
+                img.nW(src='@/assets/curso/t2-c18.png' alt='ejemplo de tabla')      
         p.mb-5  O su semejante:
         .row.justify-content-center.mb-5
           .col-lg-8
             .tarjeta--gris.p-4
               figure
-                img(src='@/assets/curso/t2-c19.svg' alt='ejemplo de tabla')      
+                img.nW(src='@/assets/curso/t2-c19.png' alt='ejemplo de tabla')      
     h3.titulo-tercero
       span.squareLetter J
       | Claves Únicas
@@ -379,7 +379,7 @@
           .col-lg-8
             .tarjeta--gris.p-4
               figure
-                img(src='@/assets/curso/t2-c20.svg' alt='ejemplo de tabla')      
+                img.nW(src='@/assets/curso/t2-c20.png' alt='ejemplo de tabla')      
         p.mb-3  Los índices son útiles para optimizar las consultas y las búsquedas de datos. Por medio de su uso es mucho más eficiente encontrar filas con ciertos valores de columnas, o mostrar los resultados en cierto orden. La alternativa es realizar búsquedas secuenciales (sin índices), que en tablas extensas requieren mucho tiempo y procesamiento de datos.
 
     Separador
@@ -394,19 +394,19 @@
     .row.justify-content-center.mb-5
       .col-lg-6
         figure(data-aos="fade-up", data-aos-delay='50')
-          img(src='@/assets/curso/t2-i3.png' alt='ejemplo de innoBD')   
+          img.nW(src='@/assets/curso/t2-i3.png' alt='ejemplo de innoBD')   
     p.mb-5  Primero se crea la tabla persona:
     .row.justify-content-center.mb-5
       .col-lg-8
         .tarjeta--gris.p-4
           figure
-            img(src='@/assets/curso/t2-c21.svg' alt='ejemplo de tabla')      
+            img.nW(src='@/assets/curso/t2-c21.png' alt='ejemplo de tabla')      
     p.mb-5  Si se quiere crear una base de datos que corresponda al modelo que se está presentando en la gráfica anterior las sentencias para la tabla teléfonos con la referencia a la tabla sería:
     .row.justify-content-center.mb-5
       .col-lg-8
         .tarjeta--gris.p-4
           figure
-            img(src='@/assets/curso/t2-c22.svg' alt='ejemplo de tabla')      
+            img.nW(src='@/assets/curso/t2-c22.png' alt='ejemplo de tabla')      
    
     p.mb-4  Se ha usado una definición a modo referencia para la columna 
       span.etiqueta  “numero” 
@@ -450,14 +450,14 @@
       .col-lg-8
         .tarjeta--gris.p-4
           figure
-            img(src='@/assets/curso/t2-c23.svg' alt='ejemplo de tabla')      
+            img.nW(src='@/assets/curso/t2-c23.png' alt='ejemplo de tabla')      
     p.mb-4  Miremos otra variante de la misma sintaxis definiendo explícitamente que se usará el motor InnoDB para que las reglas de restricción de integridad apliquen:
 
     .row.justify-content-center.mb-5
       .col-lg-8
         .tarjeta--gris.p-4
           figure
-            img(src='@/assets/curso/t2-c24.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t2-c24.png' alt='ejemplo de tabla') 
 
     p.mb-5  Y también para la tabla 
       span.etiqueta telefonos2:
@@ -465,7 +465,7 @@
       .col-lg-8
         .tarjeta--gris.p-4
           figure
-            img(src='@/assets/curso/t2-c25.svg' alt='ejemplo de tabla')      
+            img.nW(src='@/assets/curso/t2-c25.png' alt='ejemplo de tabla')      
     p.mb-5  Es necesario que la columna que posee una definición de clave foránea esté indexada 
       span.etiqueta KEY(numero). 
       | Sin embargo, esto no debe de generar preocupación, ya que si no se hace de forma clara, MySQL lo hará de forma implícita.
@@ -484,8 +484,7 @@
             .col-lg-12.light-yellow.d-flex.align-items-center
               .content-box.text-center.min-p
                 .h3 
-                  code
-                    ON DELETE &lt;opcion&gt;,
+                  code  ON DELETE &lt;opcion&gt;,
 
             .col-lg-12.p-4
               p.mb-4 Define las acciones que deben de realizar en la tabla actual, <b>cuando se elimine una fila en la tabla referenciada.</b>
@@ -497,8 +496,7 @@
             .col-lg-12.light-yellow.d-flex.align-items-center
               .content-box.text-center.min-p
                 .h3 
-                  code
-                    ON UPDATE &lt;opcion&gt;,
+                  code  ON UPDATE &lt;opcion&gt;,
 
             .col-lg-12.p-4
               p.mb-4 Es semejante, define las acciones que deben de realizar en la tabla actual, <b>cuando se modifique o actualice la columna de una fila en la tabla referenciada.</b> 
@@ -526,14 +524,14 @@
 
           .tarjeta.color-acento-botones--borde.p-5(titulo="5. SET DEFAULT")
             h3.mb-4.etiqueta SET DEFAULT
-            p borrar o alterar una clave en una fila en la tabla referenciada con un valor explícito involucra asignar el valor por defecto a las claves foráneas con el mismo valor. (MySQL 8.0 Reference Manual, 2021)
+            p Borrar o alterar una clave en una fila en la tabla referenciada con un valor explícito involucra asignar el valor por defecto a las claves foráneas con el mismo valor. (MySQL 8.0 Reference Manual, 2021)
     .row.mb-5
       .col-lg-3
         p.mb-5.text-bold  Ejemplo:
       .col-lg-7
         .tarjeta--gris.p-4
           figure
-            img(src='@/assets/curso/t2-c26.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t2-c26.png' alt='ejemplo de tabla') 
 
     p.mb-4  Si se pretende borrar una fila de 
       span.etiqueta personas3 
@@ -565,13 +563,13 @@
             span.etiqueta personas3
         .tarjeta--gris.p-4.h-100
           figure
-            img(src='@/assets/curso/t2-c27.svg' alt='ejemplo de tabla') 
+            img(src='@/assets/curso/t2-c27.png' alt='ejemplo de tabla') 
       .col-lg-5
         figcaption.customCaption.mb-2  Datos de la tabla 
             span.etiqueta telefonos3
         .tarjeta--gris.p-4.h-100
           figure
-            img(src='@/assets/curso/t2-c28.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t2-c28.png' alt='ejemplo de tabla') 
 
     p.mb-5  Si se intenta borrar la fila correspondiente a "Fulanito" se provocará un error, debido a que hay dos filas en 
     span.etiqueta 'teléfonos3' 
@@ -600,12 +598,12 @@
     .row.justify-content-center.mb-5
       .col-lg-8.mb-5
         .tarjeta--gris.p-4
-          code
-            DROP TABLE [IF EXISTS] tbl_name [, tbl_name]
+          figure
+            img.nW(src='@/assets/curso/t2-c29-1.png' alt='ejemplo de tabla')
       .col-lg-8.mb-5
         .tarjeta--gris.p-4
-          pre
-            code mysql&gt; DROP TABLE telefonos2; <br>Query OK, 0 rows affected (0.75 sec)<br>mysql&gt;  
+          figure
+            img.nW(src='@/assets/curso/t2-c29.png' alt='ejemplo de tabla')
     p.mb-5  Se puede agregar las palabras
       span.etiqueta IF EXISTS
       | para impedir errores si la tabla a eliminar no existe.       
@@ -621,7 +619,7 @@
       .col-lg-8
         .tarjeta--gris.p-4
           figure
-            img.nW(src='@/assets/curso/t2-c31.svg' alt='ejemplo de tabla') 
+            img.nW(src='@/assets/curso/t2-c31.png' alt='ejemplo de tabla') 
         figcaption  Nota: MySQL 8.0 Reference Manual (2021).
    
     .tarjeta-azul
