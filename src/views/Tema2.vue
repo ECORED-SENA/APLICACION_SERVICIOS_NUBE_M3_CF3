@@ -20,7 +20,7 @@
     p.mb-3  Se va a <b>crear y manejar</b> una base de datos de práctica, a la vez que se familiarice con la manera de <b>trabajar de MySQL.</b>
     p.mb-5 Para iniciar, se creará una base de datos únicamente para practicar, y se llamará 
       span.etiqueta "prueba":
-    TabsA.color-acento-botones.mb-5
+    TabsA.color-acento-contenido.mb-5
       //- .tarjeta debe ir acompañado de una de una de estas clases => 
       //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
       //- estas clases tambien tienen un modificador --borde
@@ -236,7 +236,7 @@
           .col-lg-9
             .tarjeta--gris.p-4
               figure
-                img.nW(src='@/assets/curso/t2-c12-1.svg' alt='ejemplo de tabla')    
+                img.nW(src='@/assets/curso/t2-c12-1.png' alt='ejemplo de tabla')    
 
     h3.titulo-tercero
       span.squareLetter F
@@ -560,31 +560,32 @@
     .row.justify-content-center.mb-5
       .col-lg-5
         figcaption.customCaption.mb-2  Datos de la tabla 
-            span.etiqueta personas3
+          span.etiqueta personas3
         .tarjeta--gris.p-4.h-100
           figure
             img.nW(src='@/assets/curso/t2-c27.png' alt='ejemplo de tabla') 
       .col-lg-5
-        figcaption.customCaption.mb-2  Datos de la tabla 
-            span.etiqueta telefonos3
+        figcaption.customCaption.mb-2 Datos de la tabla 
+          span.etiqueta telefonos3
         .tarjeta--gris.p-4.h-100
           figure
             img.nW(src='@/assets/curso/t2-c28.png' alt='ejemplo de tabla') 
-
+    br
+    br
     p.mb-5  Si se intenta borrar la fila correspondiente a "Fulanito" se provocará un error, debido a que hay dos filas en 
-    span.etiqueta 'teléfonos3' 
-    | con el valor 1 en la columna 
-    span.etiqueta 'persona_id'.
+      span.etiqueta 'teléfonos3' 
+      | con el valor 1 en la columna 
+      span.etiqueta 'persona_id'.
     p.mb-5  Sí será posible borrar la fila correspondiente a "Menganito", debido a que no existe fila alguna en la tabla 
-    span.etiqueta3  'telefonos3' 
-    | con el valor 2 en la columna 
-    span.etiqueta 'persona_id'.
+      span.etiqueta3  'telefonos3' 
+      | con el valor 2 en la columna 
+      span.etiqueta 'persona_id'.
     p.mb-5  Si alteramos el valor de 
-    span.etiqueta 'id_persona' 
-    | en la fila conveniente a "Tulanito", por el valor 3, por ejemplo, se determinará el valor 3 a la columna 
-    span.etiqueta 'persona_id' 
-    | de las filas 3ª y 6ª de la tabla 
-    span.etiqueta 'telefonos3':
+      span.etiqueta 'id_persona' 
+      | en la fila conveniente a "Tulanito", por el valor 3, por ejemplo, se determinará el valor 3 a la columna 
+      span.etiqueta 'persona_id' 
+      | de las filas 3ª y 6ª de la tabla 
+      span.etiqueta 'telefonos3':
     br
     br
     Separador

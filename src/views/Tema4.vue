@@ -230,7 +230,7 @@
 
     .row.justify-content-center
       .col-lg-10
-        TabsA.color-acento-botones.mb-5.custom-labels
+        TabsA.color-acento-contenido.mb-5.custom-labels
           //- .tarjeta debe ir acompañado de una de una de estas clases => 
           //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
           //- estas clases tambien tienen un modificador --borde
