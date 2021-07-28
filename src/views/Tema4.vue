@@ -55,8 +55,9 @@
                     span 2
                   | Importe el archivo con la sentencia source 
                   span.etiqueta &lt;ruta del archivo sql&gt;.
-              pre.p-4.tarjeta--gris
-                code  MariaDB [prueba]&gt; source D:/Peter/Downloads/cdr.sql;
+              .tarjeta--gris.p-4
+                figure
+                  img.nW(src='@/assets/curso/t4-n1.png' alt='imagen decorativa') 
         .tarjeta.color-primario.p-3.mb-5
           .row.justify-content-around.align-items-center
             .col-3.col-sm-2.col-lg-1

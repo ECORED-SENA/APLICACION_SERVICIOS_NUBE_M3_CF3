@@ -184,7 +184,7 @@
           .col-lg-9
             .tarjeta--gris.p-4
               figure
-                img.h210(src='@/assets/curso/t2-c10.png' alt='ejemplo de tabla')          
+                img.nW(src='@/assets/curso/t2-c10.png' alt='ejemplo de tabla')          
     h3.titulo-tercero
       span.squareLetter C
       | Claves Primarias
@@ -262,7 +262,7 @@
           .col-lg-9
             .tarjeta--gris.p-4
               figure
-                img.h210(src='@/assets/curso/t2-c14.png' alt='ejemplo de tabla')
+                img.nW(src='@/assets/curso/t2-c14.png' alt='ejemplo de tabla')
             figcaption  Nota: MySQL 8.0 Reference Manual (2021)  
         p.mb-5  Esta documentación se puede leer de la siguiente forma:
         .row.justify-content-center.mb-5
@@ -611,8 +611,8 @@
     .row.justify-content-center.mb-5     
       .col-lg-8.mb-5
         .tarjeta--gris.p-4
-          pre
-            code mysql&gt; DROP TABLE telefonos5;<br>ERROR 1051 (42S02): Unknown table 'telefonos5'<br>mysql&gt; DROP TABLE IF EXISTS telefonos5;<br>Query OK, 0 rows affected, 1 warning (0.00 sec)<br>mysql&gt;
+          figure
+            img.nW(src='@/assets/curso/t2-c30.png' alt='ejemplo de tabla')    
     p.mb-5  De manera similar, se puede borrar bases de datos enteras, utilizando la sentencia 
       span.etiqueta DROP DATABASE. 
       | La sintaxis asimismo es muy sencilla, a continuación, se creará una base de datos, se creará una tabla y se borrará la base de datos.
