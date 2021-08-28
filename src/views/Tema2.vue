@@ -34,7 +34,7 @@
               .col-lg-8
                 .p-3
                   figure
-                    img.nW(src='@/assets/curso/t2-c2.png' alt='ejemplo de linea de comandos CREATE DATABASE')
+                    img.nW(src='@/assets/curso/n1.svg' alt='ejemplo de linea de comandos CREATE DATABASE')
       .tarjeta.color-acento-botones--borde.p-5(titulo="PASO 2")
         .row
           .col-lg-12
