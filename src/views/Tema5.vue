@@ -18,7 +18,7 @@
               figure.mb-5
                 img(src="@/assets/curso/t5-i1.png", alt="logo de MySQL")
 
-    p.mb-5  Note que area_id en la tabla empleados puede ser nuleable:
+    p.mb-5  Note que area_id en la tabla empleados puede ser nulo:
     .row.justify-content-center.mb-5
       .col-lg-10
         .tarjeta--gris.p-4
@@ -105,7 +105,7 @@
 
     #t_5_2.titulo-segundo
       h2 5.2  Combinación externa
-    p.mb-5  Es una variedad de composición de tablas que permite seleccionar algunas filas de una tabla aunque éstas no tengan correspondencia con las filas de la otra tabla con la que se combina. 
+    p.mb-5  Es una variedad de composición de tablas que permite seleccionar algunas filas de una tabla aunque estas no tengan correspondencia con las filas de la otra tabla con la que se combina. 
     h3.titulo-tercero
       i.fas.fa-square
       | &nbsp; LEFT JOIN
@@ -119,7 +119,7 @@
       .col-lg-8
         p.mb-4  El resultado de este tipo de consulta contiene todos los registros de la tabla de la izquierda (la primera tabla que se define en el FROM en la consulta), independiente de si existe un registro correspondiente en la tabla de la derecha (la que se define en el JOIN).
         p.mb-4  La sentencia LEFT JOIN devuelve la pareja de todos los valores de la tabla izquierda (empleados), con los valores de la tabla de la derecha (áreas) correspondientes, si los hay, o retorna un valor nulo NULL en los campos de la tabla derecha cuando no haya correspondencia.
-        p.mb-4  A diferencia del resultado presentado en el ejemplo INNER JOIN donde no se mostraba el empleado cuya área no existía, en el ejemplo que siguiente se presentarán los empleados con su respectiva área, y adicionalmente se presentará un empleado cuya area no existe.
+        p.mb-4  A diferencia del resultado presentado en el ejemplo INNER JOIN donde no se mostraba el empleado cuya área no existía, en el ejemplo siguiente se presentarán los empleados con su respectiva área, y adicionalmente se presentará un empleado cuya área no existe.
         p.mb-4  El empleado que no tiene área se encuentra en la región amarilla del diagrama de la derecha, mientras que los empleados con área están en la franja naranja, en la intersección de empleados y áreas.
 
       .col-lg-4

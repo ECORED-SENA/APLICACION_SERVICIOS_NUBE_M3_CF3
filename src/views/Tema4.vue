@@ -76,7 +76,7 @@
         figure(data-aos="fade-up", data-aos-delay='0')
           img(src='@/assets/curso/t4-t2.svg' alt='tabla')
 
-    p.mb-5  A partir de este punto usaremos MySQL WorkBeach para visualizar mejor los resultados.
+    p.mb-5  A partir de este punto usaremos MySQL WorkBench para visualizar mejor los resultados.
 
     TabsB.color-acento-botones.mb-5
       .py-4.py-md-5(titulo="Paso 1" :icono="require('@/assets/curso/t4-ic1.svg')")
@@ -86,7 +86,7 @@
               li 
                 .lista-ol--cuadro__vineta
                   span 1
-                | De clic en la pestaña de uso de bases de datos.
+                | Dé clic en la pestaña de uso de bases de datos.
               li 
                 .lista-ol--cuadro__vineta
                   span 2
@@ -184,7 +184,7 @@
       span.etiqueta facturar. 
       | Pero para saber cuántos minutos duró la llamada, se debe dividir el número de segundos por 60 y eso nos da el número de minutos. Ahora, el número de minutos no es entero y tiene datos decimales se debe redondear hacia arriba con la función 
       span.etiqueta CEIL 
-      | y este valor ya redondeado, se puede multiplicar por 85 que es el valor del minuto. tar todos los elementos de la tabla se debe usar la sentencia:
+      | y este valor ya redondeado, se puede multiplicar por 85 que es el valor del minuto.
     .row.mb-5.justify-content-center
       .col-lg-5
         .tarjeta--gris.p-4
@@ -237,7 +237,7 @@
           //- estas clases tambien tienen un modificador --borde
           .tarjeta.color-acento-botones--borde.p-5(titulo="Operador AND")
             h3.mb-4.etiqueta Operador AND
-            p.mb-3  SQL se puede usar el operador AND, que se trata de un operador binario, es decir, requiere de dos operandos. El resultado de la operación es verdadero, sólo si ambos operandos son verdaderos, falso si cualquier operando es falso o nulo si alguno de los dos es nulo. 
+            p.mb-3  En SQL se puede usar el operador AND, que se trata de un operador binario, es decir, requiere de dos operandos. El resultado de la operación es verdadero, sólo si ambos operandos son verdaderos, falso si cualquier operando es falso o nulo si alguno de los dos es nulo. 
             p.mb-5  Esto se representa mediante la siguiente tabla de verdad:
             .tabla-a.color-acento-botones.mb-4 
               table.table.text-center
@@ -288,7 +288,7 @@
 
           .tarjeta.color-acento-botones--borde.p-5(titulo="Operador OR")
             h3.mb-4.etiqueta Operador OR
-            p.mb-3  SQL este operador también tiene dos formas equivalentes OR  
+            p.mb-3  En SQL este operador también tiene dos formas equivalentes OR  
             p.mb-4  El operador OR también es binario. Si ambos operandos siendo diferentes de NULL y el resultado es verdadero si alguno de ellos es verdadero y falso si los dos son falsos. Si uno de los operandos es NULL el resultado es verdadero si el otro es verdadero y NULL en el si el otro es falso. 
             p.mb-5  La tabla de verdad es
             .tabla-a.color-acento-botones.mb-4 

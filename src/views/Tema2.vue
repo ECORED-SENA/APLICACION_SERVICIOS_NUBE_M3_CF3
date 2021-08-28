@@ -217,9 +217,9 @@
       | Columnas Autoincrementadas
     .row.mb-5.justify-content-center
       .col-lg-10
-        p.mb-4  En MySQL existe la posibilidad de crear una columna autoincrementada, sin embargo, esta columna sólo puede ser de tipo entero y llave primaria.
+        p.mb-4  En MySQL existe la posibilidad de crear una columna autoincrementada, sin embargo, esta columna solo puede ser de tipo entero y llave primaria.
         p.mb-4  Si cuando se inserta una fila se excluye el valor de la columna autoincrementada o si a un valor nulo se le intenta insertar para esa columna, su valor será calculado automáticamente, tomando el valor mayor de esa columna y sumándole uno, es decir, es secuencial. Permitiendo crear, una columna con un valor único y secuencias para cada fila de la tabla.
-        p.mb-5  Comúnmente, estas columnas son usadas como claves primarias secuenciales. SQL solo las permite en números enteros, es decir una columna de otro timo no podrá ser autoincrementable, de tal forma que la composición de clave primaria, que sea entera y autoincrementada es perfecta para ser usada como clave primaria artificial:
+        p.mb-5  Comúnmente, estas columnas son usadas como claves primarias secuenciales. SQL solo las permite en números enteros, es decir una columna de otro tipo no podrá ser autoincrementable, de tal forma que la composición de clave primaria, que sea entera y autoincrementada es perfecta para ser usada como clave primaria artificial:
         .row.justify-content-center.mb-5
           .col-lg-9
             .tarjeta--gris.p-4
@@ -282,9 +282,9 @@
                   span.etiqueta [NOT NULL | NULL]: 
                   | todo lo que encuentre encerrado entre corchetes 
                   span.etiqueta ([]) 
-                  | significa que es opcional pude incluirse o no, dentro de las opciones.<br>Lo que encuentre entre separado por el carácter pai 
+                  | significa que es opcional pude incluirse o no, dentro de las opciones.<br>Lo que encuentre separado por el carácter pipe 
                   span.etiqueta ( | ), 
-                  | significa que debe escoger una opción de las que están paradas por el pai.
+                  | significa que debe escoger una opción de las que están paradas por el pipe.
          
               li
                 i.fas.fa-square
@@ -395,7 +395,8 @@
       .col-lg-6
         figure(data-aos="fade-up", data-aos-delay='50')
           img.nW(src='@/assets/curso/t2-i3.png' alt='ejemplo de innoBD')   
-    p.mb-5  Primero se crea la tabla persona:
+    p.mb-5  Primero se crea la tabla 
+      span.etiqueta persona:
     .row.justify-content-center.mb-5
       .col-lg-8
         .tarjeta--gris.p-4
@@ -421,15 +422,15 @@
       | No obstante, aunque la sintaxis se evidencia.  
     p.mb-4  La expresión 
       span.etiqueta  DELETE CASCADE 
-      | , hace que, si se borra una fila de la tabla persona que tiene relacionados registros telefónicos a través de la columna 
+      | , hace que, si se borra una fila de la tabla 
+      span.etiqueta persona 
+      | que tiene relacionados registros telefónicos a través de la columna 
       span.etiqueta persona_id 
       | en la tabla 
       span.etiqueta telefonos, 
       | estos registros (localizados en la tabla 
       span.etiqueta telefonos)
-      | se borren si se borra el de la tabla 
-      span.etiqueta persona,
-      | a este tipo de condiciones se le llama restricción de integridad referencial.
+      | se borren a este tipo de condiciones se le llama restricción de integridad referencial.
     p.mb-4  De igual forma 
       span.etiqueta  UPDATE CASCADE
       | , hace que, si el 
@@ -541,7 +542,9 @@
       span.etiqueta telefonos3 
       | en la columna 
       span.etiqueta persona_id 
-      | con mismo valor. La fila de personas3 no será eliminada, a menos que previamente se eliminen las filas que tienen el mismo valor de clave foránea en la tabla 
+      | con mismo valor. La fila de 
+      span.etiqueta personas3 
+      | no será eliminada, a menos que previamente se eliminen las filas que tienen el mismo valor de clave foránea en la tabla 
       span.etiqueta teléfonos3, 
       | lo anterior debió que se ha definido restricción 
       span.etiqueta DELETE RESTRICT.

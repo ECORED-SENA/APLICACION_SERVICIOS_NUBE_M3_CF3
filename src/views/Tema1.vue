@@ -110,7 +110,7 @@
           img(src='@/assets/curso/t1-i7.svg', alt='imagen decorativa referente a usuario sentado usando un computador')        
       .col-lg-9   
         p.mb-3  <b>SQL</b> abarca ambos lenguajes <b>DDL+DML</b> y serán estudiados en esta unidad, ya que ambos hacen parte del conjunto de sentencias de <b>SQL.</b>
-        p.mb-5  En este punto se explicará el proceso para convertir del modelo lógico relacional, al modelo físico, empleando sentencias SQL. <b>Ya no se empleará (por ahora), MySQL Workbeach, y se observarán las particularidades específicas de MySQL.</b>     
+        p.mb-5  En este punto se explicará el proceso para convertir del modelo lógico relacional, al modelo físico, empleando sentencias SQL. <b>Ya no se empleará (por ahora), MySQL Workbench, y se observarán las particularidades específicas de MySQL.</b>     
             
 
   
